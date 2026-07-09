@@ -1,0 +1,231 @@
+Script started on 2026-07-07 12:00:42+07:00 [TERM="dumb" TTY="/dev/pts/68" COLUMNS="134" LINES="74"]
+eltex-v17@eltex-2026-summer:~$ echo "=== Задание 2: команды, начинающиеся на ls ==="
+=== Задание 2: команды, начинающиеся на ls ===
+eltex-v17@eltex-2026-summer:~$ compgen -c ls
+ls
+lsblk
+lsattr
+lscpu
+lsipc
+lsmod
+lsmem
+lspci
+lsinitramfs
+lsns
+lsusb
+lsof
+ls
+lslogins
+lsfd
+lslocks
+lsb_release
+lsirq
+lsblk
+lsattr
+lscpu
+lsipc
+lsmod
+lsmem
+lspci
+lsinitramfs
+lsns
+lsusb
+lsof
+ls
+lslogins
+lsfd
+lslocks
+lsb_release
+lsirq
+eltex-v17@eltex-2026-summer:~$ echo "=== Задание 3: переменные HIST ==="
+=== Задание 3: переменные HIST ===
+eltex-v17@eltex-2026-summer:~$ compgen -v HIST
+HISTCMD
+HISTCONTROL
+HISTFILE
+HISTFILESIZE
+HISTSIZE
+eltex-v17@eltex-2026-summer:~$ echo "HIT"STSIZEeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE" = $HISTSIZeltex-v17@eltex-2026-summer:~$ echo "HISTSIZeltex-v17@eltex-2026-summer:~$ echo "HISTSIZEeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTSIZEeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE eltex-v17@eltex-2026-summer:~$ echo "HISTSIZE =eltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = eltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $eltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $Heltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HIeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTSeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTSIeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTSIZeltex-v17@eltex-2026-summer:~$ echo "HISTSIZE = $HISTSIZE"
+HISTSIZE = 1000
+eltex-v17@eltex-2026-summer:~$ ls -d ~/.*
+/home/eltex-v17/.bash_history  /home/eltex-v17/.bashrc	/home/eltex-v17/.local	  /home/eltex-v17/.viminfo
+/home/eltex-v17/.bash_logout   /home/eltex-v17/.config	/home/eltex-v17/.profile
+eltex-v17@eltex-2026-summer:~$ export HISTTIMEFORMAT="%F %T  "
+eltex-v17@eltex-2026-summer:~$ DATdate
+Tue Jul  7 12:04:44 PM +07 2026
+eltex-v17@eltex-2026-summer:~$ history 2
+   78  2026-07-07 12:04:44  date
+   79  2026-07-07 12:04:58  history 2
+eltex-v17@eltex-2026-summer:~$ tail -2 $HISTFILE
+screen -S top
+exit
+eltex-v17@eltex-2026-summer:~$ PROMPT_COMMAND='history -a'
+eltex-v17@eltex-2026-summer:~$ whoami
+eltex-v17
+eltex-v17@eltex-2026-summer:~$ history 2
+   82  2026-07-07 12:05:36  whoami
+   83  2026-07-07 12:05:47  history 2
+eltex-v17@eltex-2026-summer:~$ tail -2 $HISTFILE
+#1783400747
+history 2
+eltex-v17@eltex-2026-summer:~$ tail -2 $HISTFILhistory 2       whoami  PROMPT_COMMAND='history -atail -2 $HISTFILE         history 2       date    export HISTTIMEFORMAT="%F %T  ls -d ~/.*                    echo "HISTSIZE = $HISTSIZEcompgen -v HIST           echo "=== Задание 3: переменные HIST ==="eltex-v17@eltex-2026-summer:~$ compgen -c ls                           echo "=== Задание 2: команды, начинающиеся на ls ==="eltex-v17@eltex-2026-summer:~$ exit                                                 eltex-v17@eltex-2026-summer:~$ exiscreen -S totop         exitopscreen -lls       exils rm Report.odtls           exinano report_part1.txton report_part1.txtls                   exils exicd eltex-v1home/   ls     cd .ls - exicd eltex-v1ls         cd .scp eltex-v17@217.71.138.1 home/eltex-v17eltex-v17@eltex-2026-summer:~$ exit                                     eltex-v17@eltex-2026-summer:~$ exils tonano report_part1.txtls                   screen -lXS 5605 qui6870 qui14095 qui<top> qui14095> qui.-d> quils               XS <14095> quils             qui    r 14095.-5605.-dls      r  --dw          atch /usr/bin/vmstatop                 watch /usr/bin/vmstascreen -r 5605      ls   vi report_part1.txscreen -ls        S -d -r top ls  r toS top -d --d -m   -ls           screen -lls       pingls screen -l-ls      screen -S -d -top -d -r top     ls  r toS -d -ls    vi report_part1.txscreen -ls        r 560watch /usr/bin/vmstatop                 watch /usr/bin/vmsta                   screen -r - -ls  r 5605.-14095.-ls        qui    XS <14095> quils            XS <14095.-d> qui> quit  top> quit 14095 qui6870 quit5605 quils         ls       nano report_part1.txttop                  lsexiscp eltex-v17@217.71.138.1 home/eltex-v17eltex-v17@eltex-2026-summer:~$ cd ..                                   ls  cd eltex-v1exit       ls  -cd .ls  cd homeeltex-v1exit       ls exils naon report_part1.txtno report_part1.txtexit                 ls rm Report.odtls           exils screen -ltop      exitopscreen -S toexit        cho "=== Задание 2: команды, начинающиеся на ls ==="eltex-v17@eltex-2026-summer:~$ compgen -c ls                                       echo "=== Задание 3: переменные HIST ==="eltex-v17@eltex-2026-summer:~$ compgen -v HIST                         echo "HISTSIZE = $HISTSIZEls -d ~/.*                export HISTTIMEFORMAT="%F %T  date                          history tail -2 $HISTFILPROMPT_COMMAND='history -awhoami                    history tail -2 $HISTFIL                tail -2 $HISTFILhistory 2       whoami  PROMPT_COMMAND='history -atail -2 $HISTFILE         history 2       date    export HISTTIMEFORMAT="%F %T  ls -d ~/.*                    echo "HISTSIZE = $HISTSIZEcompgen -v HIST           echo "=== Задание 3: переменные HIST ===echo "HISTFILESIZE = $HISTFILESIZE"
+HISTFILESIZE = 2000
+eltex-v17@eltex-2026-summer:~$ grep 'whoami' $HISTFILE
+whoami
+eltex-v17@eltex-2026-summer:~$ tail -5 $HISTFILE
+tail -2 $HISTFILE
+#1783400858
+echo "HISTFILESIZE = $HISTFILESIZE"
+#1783400868
+grep 'whoami' $HISTFILE
+eltex-v17@eltex-2026-summer:~$ DATE=$(date +%F)
+eltex-v17@eltex-2026-summer:~$ усрecho $DATE
+2026-07-07
+eltex-v17@eltex-2026-summer:~$ TIME=$(date +%T)
+eltex-v17@eltex-2026-summer:~$ echo $TIME
+12:08:43
+eltex-v17@eltex-2026-summer:~$ echo $TIME
+12:08:43
+eltex-v17@eltex-2026-summer:~$ DATE_TIME="$DATE $TIME"
+eltex-v17@eltex-2026-summer:~$ echo $DATE_TIME
+2026-07-07 12:08:43
+eltex-v17@eltex-2026-summer:~$ ls /bin /sbin | grep '[0-9]'
+addr2line
+b2sum
+base32
+base64
+bunzip2
+bzip2
+bzip2recover
+c89
+c89-gcc
+c99
+c99-gcc
+cpan5.36-x86_64-linux-gnu
+cpp-12
+diff3
+enc2xs
+gcc-12
+gcc-ar-12
+gcc-nm-12
+gcc-ranlib-12
+gcov-12
+gcov-dump-12
+gcov-tool-12
+grub-menulst2cfg
+grub-mkpasswd-pbkdf2
+grub-syslinux2cfg
+h2ph
+h2xs
+i386
+linux32
+linux64
+lto-dump-12
+md5sum
+md5sum.textutils
+pdb3
+pdb3.11
+perl5.36.0
+perl5.36-x86_64-linux-gnu
+ping4
+ping6
+pl2pm
+pod2html
+pod2man
+pod2text
+pod2usage
+py3clean
+py3compile
+py3versions
+pydoc3
+pydoc3.11
+pygettext3
+pygettext3.11
+python3
+python3.11
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+ssh-argv0
+systemd-id128
+traceroute6
+traceroute6.db
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-12
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-12
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-12
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-12
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-12
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-12
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-12
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-12
+x86_64-linux-gnu-gold
+x86_64-linux-gnu-gp-archive
+x86_64-linux-gnu-gp-collect-app
+x86_64-linux-gnu-gp-display-html
+x86_64-linux-gnu-gp-display-src
+x86_64-linux-gnu-gp-display-text
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-gprofng
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-lto-dump
+x86_64-linux-gnu-lto-dump-12
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+dumpe2fs
+e2freefrag
+e2fsck
+e2image
+e2label
+e2mmpstatus
+e2scrub
+e2scrub_all
+e2undo
+e4crypt
+e4defrag
+fsck.ext2
+fsck.ext3
+fsck.ext4
+killall5
+mke2fs
+mkfs.ext2
+mkfs.ext3
+mkfs.ext4
+resize2fs
+tune2fs
+update-grub2
+eltex-v17@eltex-2026-summer:~$ ls /bin /sbin | grep '[0-9]echo $DATE_TIME            DATE_TIME="$DATE $TIMEecho $TIME            TIME=$(date +%Techo $DATE     DATE=$(date +%Ftail -5 $HISTFILgrep 'whoami' $HISTFILecho "HISTFILESIZE = $HISTFILESIZE"eltex-v17@eltex-2026-summer:~$ tail -2 $HISTFILE                 history 2       whoami  PROMPT_COMMAND='history -atail -2 $HISTFILE         history 2       date    export HISTTIMEFORMAT="%F %T  ls -d ~/.*                    echo "HISTSIZE = $HISTSIZEcompgen -v HIST           echo "=== Задание 3: переменные HIST ==="eltex-v17@eltex-2026-summer:~$ compgen -c ls                           echo "=== Задание 2: команды, начинающиеся на ls ==="eltex-v17@eltex-2026-summer:~$ compgen -c ls                                       echo "=== Задание 3: переменные HIST ==="eltex-v17@eltex-2026-summer:~$ compgen -v HIST                         echo "HISTSIZE = $HISTSIZEls -d ~/.*                export HISTTIMEFORMAT="%F %T  date                          history tail -2 $HISTFILPROMPT_COMMAND='history -awhoami                    history tail -2 $HISTFILecho "HISTFILESIZE = $HISTFILESIZE"eltex-v17@eltex-2026-summer:~$ grep 'whoami' $HISTFILE           tail -5 $HISTFILE     DATE=$(date +%F)echo $DATE     TIME=$(date +%Techo $TIME     DATE_TIME="$DATE $TIMEecho $DATE_TIME       ls /bin /sbin | grep '[0-9]                           PS1='\u@\h-$(date +%H:%M)> '
+eltex-v17@eltex-2026-summer-12:09> export PS1
+eltex-v17@eltex-2026-summer-12:10> mkdir -p ~/$(date +%Y)-{01..12}
+eltex-v17@eltex-2026-summer-12:10> ls -d ~/$(date +%Y)-*
+/home/eltex-v17/2026-01  /home/eltex-v17/2026-04  /home/eltex-v17/2026-07  /home/eltex-v17/2026-10
+/home/eltex-v17/2026-02  /home/eltex-v17/2026-05  /home/eltex-v17/2026-08  /home/eltex-v17/2026-11
+/home/eltex-v17/2026-03  /home/eltex-v17/2026-06  /home/eltex-v17/2026-09  /home/eltex-v17/2026-12
+eltex-v17@eltex-2026-summer-12:10> exit
+exit
+
+Script done on 2026-07-07 12:10:31+07:00 [COMMAND_EXIT_CODE="0"]

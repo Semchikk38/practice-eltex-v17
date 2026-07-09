@@ -1,0 +1,20 @@
+cd ~
+touch ${USER}_part3.log
+mkdir -p D1/D2/D3
+touch D1/D2/file.txt
+echo "Hello World" > D1/D2/file.txt
+ln -s ../file.txt D1/D2/D3/symlink.txt
+ln D1/D2/file.txt D1/D2/D3/hardlink.txt
+ls -li D1/D2/file.txt D1/D2/D3/*
+cat D1/D2/D3/symlink.txt
+cat D1/D2/D3/hardlink.txt
+mv D1/D2/file.txt D1/
+cat D1/D2/D3/symlink.txt   # ошибка, т.к. указывает на относительный путь, который после перемещения стал недоступен
+cat D1/D2/D3/hardlink.txt  # работает
+rm -rf D1/D2
+find / -type f -size +20M 2>/dev/null > ${USER}_part3_gt20M.log
+du -h $(head -5 ${USER}_part3_gt20M.log)
+find ~ -type f -mtime -1 2>/dev/null
+which find
+file $(which find)
+file /boot/initrd.img*

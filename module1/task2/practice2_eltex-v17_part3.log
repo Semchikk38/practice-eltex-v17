@@ -202,4 +202,170 @@ drwxr-xr-x  5 root root 4096 Jul  9 15:54 [01;34mmodule1[0m
 [?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# св [K[K[Kcd [K[K[Kcd ..
 [?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# ls
 [?2004l[0m[01;34metc_backup[0m       [01;31metc_backup_7zip.7z[0m        [01;34metc_backup_gzip[0m             [01;31metc_backup_gzip.tar.gz[0m
-[01;34metc_backup_7zip[0m  [01;31metc_backup_bzip2.tar.bz2[0m  [01;31metc_backup_gzip_new.tar.gz
+[01;34metc_backup_7zip[0m  [01;31metc_backup_bzip2.tar.bz2[0m  [01;31metc_backup_gzip_new.tar.gz[0m  [01;34mpractice-eltex-v17[0m
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# cd practice-eltex-v17/
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mmkdir -p module1/task1 module1/task2 module1/task3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p module1/task1 module1/task2 module1/task3
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mscp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part1.log /root/practice-eltex-v17[27m[7m/[27m[7mmodule1/task1/ [27m
+[7mscp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part2.log /root/practice-eltex-v17/module1/task2/[27m
+[7mscp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part3.log /root/practice-eltex-v17/module1/task3/[27m[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part1.log /root/practice-eltex-v17/module1/task1/
+scp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part2.log /root/practice-eltex-v17/module1/task2/
+scp eltex-v17@172.16.8.4:~/practice2_eltex-v17_part3.log /root/practice-eltex-v17/module1/task3/
+[?2004leltex-v17@172.16.8.4's password: 
+practice2_eltex-v17_part1.log                                                                   0%    0     0.0KB/s   --:-- ETApractice2_eltex-v17_part1.log                                                                 100%   34MB 217.2MB/s   00:00    
+eltex-v17@172.16.8.4's password: 
+practice2_eltex-v17_part2.log                                                                   0%    0     0.0KB/s   --:-- ETApractice2_eltex-v17_part2.log                                                                 100%  174KB  95.7MB/s   00:00    
+eltex-v17@172.16.8.4's password: 
+practice2_eltex-v17_part3.log                                                                   0%    0     0.0KB/s   --:-- ETApractice2_eltex-v17_part3.log                                                                 100%   40KB  32.1MB/s   00:00    
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# git add .
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# got[K[Kit commit -m ""Д"о"ф"[1P"б"а"в"л"е"н"ы"й"[1P"[1P"[1P"[1P"е"н"ы" "ф"а"й"л"ы" "п"р"а"к"т"и"2"и"[1P"[1P"к"и" "№"2"[C
+[?2004l[main aedcdf9] Добавлены файлы практики №2
+ 3 files changed, 309685 insertions(+)
+ create mode 100644 module1/task1/practice2_eltex-v17_part1.log
+ create mode 100644 module1/task2/practice2_eltex-v17_part2.log
+ create mode 100644 module1/task3/practice2_eltex-v17_part3.log
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# git push
+[?2004lEnumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3/9)Writing objects:  44% (4/9)Writing objects:  44% (4/9), 1.06 MiB | 1.29 MiB/sWriting objects:  55% (5/9), 1.06 MiB | 1.29 MiB/sWriting objects:  66% (6/9), 1.06 MiB | 1.29 MiB/sWriting objects:  77% (7/9), 1.06 MiB | 1.29 MiB/sWriting objects:  88% (8/9), 1.06 MiB | 1.29 MiB/sWriting objects: 100% (9/9), 1.06 MiB | 1.29 MiB/sWriting objects: 100% (9/9), 4.21 MiB | 3.00 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Semchikk38/practice-eltex-v17.git
+   cf3dc51..aedcdf9  main -> main
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mmkdir ~/practice-eltex-v17_clone && cd ~/practice-eltex-v17_clone[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir ~/practice-eltex-v17_clone && cd ~/practice-eltex-v17_clone
+[A
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# [7mgit clone https://github.com/Semchikk38/practice-eltex-v17.git .[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/Semchikk38/practice-eltex-v17.git .
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lCloning into '.'...
+remote: Enumerating objects: 12, done.[K
+remote: Counting objects:   8% (1/12)[Kremote: Counting objects:  16% (2/12)[Kremote: Counting objects:  25% (3/12)[Kremote: Counting objects:  33% (4/12)[Kremote: Counting objects:  41% (5/12)[Kremote: Counting objects:  50% (6/12)[Kremote: Counting objects:  58% (7/12)[Kremote: Counting objects:  66% (8/12)[Kremote: Counting objects:  75% (9/12)[Kremote: Counting objects:  83% (10/12)[Kremote: Counting objects:  91% (11/12)[Kremote: Counting objects: 100% (12/12)[Kremote: Counting objects: 100% (12/12), done.[K
+remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
+Receiving objects:   8% (1/12)Receiving objects:  16% (2/12)Receiving objects:  25% (3/12)Receiving objects:  33% (4/12)Receiving objects:  41% (5/12)Receiving objects:  50% (6/12)remote: Total 12 (delta 0), reused 12 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  58% (7/12), 1.48 MiB | 2.63 MiB/sReceiving objects:  66% (8/12), 1.48 MiB | 2.63 MiB/sReceiving objects:  75% (9/12), 1.48 MiB | 2.63 MiB/sReceiving objects:  83% (10/12), 1.48 MiB | 2.63 MiB/sReceiving objects:  91% (11/12), 1.48 MiB | 2.63 MiB/sReceiving objects: 100% (12/12), 1.48 MiB | 2.63 MiB/sReceiving objects: 100% (12/12), 4.21 MiB | 5.97 MiB/s, done.
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# ls -la
+[?2004ltotal 20
+drwxr-xr-x  4 root root 4096 Jul  9 16:01 [0m[01;34m.[0m
+drwx------ 11 root root 4096 Jul  9 16:01 [01;34m..[0m
+drwxr-xr-x  8 root root 4096 Jul  9 16:01 [01;34m.git[0m
+drwxr-xr-x  5 root root 4096 Jul  9 16:01 [01;34mmodule1[0m
+-rw-r--r--  1 root root   42 Jul  9 16:01 README.md
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# cd ..
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# ;s
+[?2004l-bash: syntax error near unexpected token `;'
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# ls
+[?2004l[0m[01;34metc_backup[0m       [01;31metc_backup_7zip.7z[0m        [01;34metc_backup_gzip[0m             [01;31metc_backup_gzip.tar.gz[0m  [01;34mpractice-eltex-v17_clone[0m
+[01;34metc_backup_7zip[0m  [01;31metc_backup_bzip2.tar.bz2[0m  [01;31metc_backup_gzip_new.tar.gz[0m  [01;34mpractice-eltex-v17[0m
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# cd practice-eltex-v17
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mecho "Обновление от $(date)" >> README.md[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Обновление от $(date)" >> README.md
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# git add .[KREADME.md 
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mgit commit -m "Обновление README с датой"[27m
+[7mgit push[27m[A]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# git commit -m "Обновление README с датой"
+git push
+[?2004l[main afb8e29] Обновление README с датой
+ 1 file changed, 1 insertion(+)
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 420 bytes | 420.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Semchikk38/practice-eltex-v17.git
+   aedcdf9..afb8e29  main -> main
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# cd ../practice-eltex-v17_clone/
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# [7mgit fetch[27m
+[7mgit log origin/main[27m
+[7mgit diff main origin/main[27m
+[7mgit merge[27m[A[A[A]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# git fetch
+git log origin/main
+git diff main origin/main
+git merge
+[?2004lremote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)[K
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 400 bytes | 400.00 KiB/s, done.
+From https://github.com/Semchikk38/practice-eltex-v17
+   aedcdf9..afb8e29  main       -> origin/main
+[?1h=[33mcommit afb8e29e852123ed3e9cee3f962c890a12fc24f8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Semchikk38 <semchik.er@gmail.com>[m
+Date:   Thu Jul 9 16:02:31 2026 +0000[m
+[m
+    Обновление README с датой[m
+[m
+[33mcommit aedcdf93338fbd7a945b2dffc23edbc312e3e6f9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
+Author: Semchikk38 <semchik.er@gmail.com>[m
+Date:   Thu Jul 9 16:00:18 2026 +0000[m
+[m
+    Добавлены файлы практики №2[m
+[m
+[33mcommit cf3dc514a415119841ee94ab53c101fe1e9920d0[m[m
+Author: Semchikk38 <semchik.er@gmail.com>[m
+Date:   Thu Jul 9 15:53:51 2026 +0000[m
+[m
+    first commit[m
+[K[?1l>[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 1377fd9..e992975 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+ # Отчеты по практике №2[m[m
+[32m+[m[32mОбновление от Thu Jul  9 04:01:59 PM UTC 2026[m[m
+[K[?1l>Updating aedcdf9..afb8e29
+Fast-forward
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17_cloneroot@eltex-practice2-v17:~/practice-eltex-v17_clone# cd //[K[K./[K./pa[Kractice-eltex-v17
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# [7mgit add .[27m
+[7mgit commit -m "Обновление отчётов"[27m
+[7mgit push[27m[A[A]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# git add .
+git commit -m "Обновление отчётов"
+git push
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# учше[K[K[K[Kexit
+[?2004llogout
+Connection to 172.16.9.191 closed.
+[?2004h]0;eltex-v17@eltex-2026-summer: ~eltex-v17@eltex-2026-summer:~$ ls
+[?2004l[0m[01;34m2026-01[0m  [01;34m2026-04[0m  [01;34m2026-07[0m  [01;34m2026-10[0m  [01;34mD1[0m                         eltex-v17_part3.log            practice2_eltex-v17_part3.log
+[01;34m2026-02[0m  [01;34m2026-05[0m  [01;34m2026-08[0m  [01;34m2026-11[0m  eltex-v17_part2.log        practice2_eltex-v17_part1.log  report_part1.txt
+[01;34m2026-03[0m  [01;34m2026-06[0m  [01;34m2026-09[0m  [01;34m2026-12[0m  eltex-v17_part3_gt20M.log  practice2_eltex-v17_part2.log  Report.pdf
+[?2004h]0;eltex-v17@eltex-2026-summer: ~eltex-v17@eltex-2026-summer:~$ lsssh root@172.16.9.191
+[?2004lWelcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Jul  9 04:07:20 PM UTC 2026
+
+  System load:  0.04               Processes:              113
+  Usage of /:   43.6% of 14.66GB   Users logged in:        0
+  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.191
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+74 updates can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Thu Jul  9 02:38:07 PM UTC 2026
+Last login: Thu Jul  9 15:42:14 2026 from 172.16.8.4
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mrm -rf module1/task1/*[27mrm -rf module1/task1/*
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mrm -rf module1/task3/*[27mrm -rf module1/task3/*
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# дыды[K[K[K[Kls -la modu[K[K[K[K[K[K[K[K[K[K[Kcd practice-eltex-v17
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~/practice-eltex-v17root@eltex-practice2-v17:~/practice-eltex-v17# ls -la module1/task2/
+[?2004ltotal 184
+drwxr-xr-x 2 root root   4096 Jul  
