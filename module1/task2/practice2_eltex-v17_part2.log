@@ -1,0 +1,1406 @@
+Script started on 2026-07-09 22:11:37+07:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="134" LINES="74"]
+[?2004h]0;eltex-v17@eltex-2026-summer: ~eltex-v17@eltex-2026-summer:~$ watch /usr/bin/vmstatexit[K[2Plsmv practice2__part1.log practice2_${MYUSER}_part1.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMYUSER=eltex-v17[Knano practice2__part1.log ls[Kexitscript -a practice2_${MYUSER}_part1.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcat practice2__part1.lognano practice2__part1.log [2Pcat practice2__part1.logexit[Kscript -a practice2_${MYUSER}_part1.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsnano practice2__part1.log [10PMYUSER=eltex-v17mv practice2__part1.log practice2_${MYUSER}_part1.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kexitwatch /usr/bin/vmstat[Kssh root [K@172/[K.16.9.191
+[?2004lWelcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Jul  9 03:12:16 PM UTC 2026
+
+  System load:  1.17               Processes:              114
+  Usage of /:   42.8% of 14.66GB   Users logged in:        0
+  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.191
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+74 updates can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Thu Jul  9 02:38:07 PM UTC 2026
+Last login: Thu Jul  9 15:09:05 2026 from 172.16.8.4
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# BODT[K[KOT_STARS[KT=$(JOURN[K[K[K[K[Kjournalctl -b -n 1 --output=shot[Krt-iso | head -n 1 | awk "[K'{print $q[K1}')
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# echo "НА[Kачало загрузи[Kки";"[1P":" "$"B"O"O"T"_"S"T"A"R"T"[C
+[?2004lНачало загрузки: 2026-07-09T15:12:16+00:00
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mEND_TIME=$(date -d "$BOOT_START + 20 seconds" +"%Y-%m-%d %H:%M:%S")[27m
+[7mjournalctl -b --since="$BOOT_START" --until="$END_TIME"[27m[AEND_TIME=$(date -d "$BOOT_START + 20 seconds" +"%Y-%m-%d %H:%M:%S")
+journalctl -b --since="$BOOT_START" --until="$END_TIME"
+[?2004l[?1h=Jul 09 15:12:16 eltex-practice2-v17 sshd[998]: Accepted publickey for root from 172.16.8.4 port 38286 ssh2: RSA SHA256:l/qfATkJY+laS3[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Created slice user-0.slice - User Slice of UID 0.[m
+Jul 09 15:12:16 eltex-practice2-v17 sshd[998]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Starting user-runtime-dir@0.service - User Runtime Directory /run/user/0...[m
+Jul 09 15:12:16 eltex-practice2-v17 (systemd)[1002]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd-logind[696]: New session 3 of user root.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Finished user-runtime-dir@0.service - User Runtime Directory /run/user/0.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Starting user@0.service - User Manager for UID 0...[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Queued start job for default target default.target.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Created slice app.slice - User Application Slice.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib ca[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Reached target paths.target - Paths.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Reached target timers.target - Timers.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Starting dbus.socket - D-Bus User Message Bus Socket...[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on dirmngr.socket - GnuPG network certificate management daemon.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase c[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cac[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on keyboxd.socket - GnuPG public key management service.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on pk-debconf-helper.socket - debconf communication socket.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on snapd.session-agent.socket - REST API socket for snapd user session a[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on dbus.socket - D-Bus User Message Bus Socket.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation[m[7m>[27m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Reached target sockets.target - Sockets.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Reached target basic.target - Basic System.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Reached target default.target - Main User Target.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1002]: Startup finished in 81ms.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Started user@0.service - User Manager for UID 0.[m
+Jul 09 15:12:16 eltex-practice2-v17 systemd[1]: Started session-3.scope - Session 3 of User root.[m
+[7mlines 1-30/30 (END)[27m[K[K[K[7mlines 1-30/30 (END)[27m[K[K[K[7mlines 1-30/30 (END)[27m[K[K[?1l>[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# journl[Kalctl -k -b 0 | head -n 100
+[?2004lJul 09 15:07:15 localhost kernel: Linux version 6.8.0-134-generic (buildd@lcy02-amd64-007) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #134-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 26 18:43:11 UTC 2026 (Ubuntu 6.8.0-134.134-generic 6.8.12)
+Jul 09 15:07:15 localhost kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-134-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Jul 09 15:07:15 localhost kernel: KERNEL supported cpus:
+Jul 09 15:07:15 localhost kernel:   Intel GenuineIntel
+Jul 09 15:07:15 localhost kernel:   AMD AuthenticAMD
+Jul 09 15:07:15 localhost kernel:   Hygon HygonGenuine
+Jul 09 15:07:15 localhost kernel:   Centaur CentaurHauls
+Jul 09 15:07:15 localhost kernel:   zhaoxin   Shanghai  
+Jul 09 15:07:15 localhost kernel: BIOS-provided physical RAM map:
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bffd9fff] usable
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x00000000bffda000-0x00000000bfffffff] reserved
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+Jul 09 15:07:15 localhost kernel: BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff] reserved
+Jul 09 15:07:15 localhost kernel: NX (Execute Disable) protection: active
+Jul 09 15:07:15 localhost kernel: APIC: Static calls initialized
+Jul 09 15:07:15 localhost kernel: SMBIOS 2.8 present.
+Jul 09 15:07:15 localhost kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org 04/01/2014
+Jul 09 15:07:15 localhost kernel: Hypervisor detected: KVM
+Jul 09 15:07:15 localhost kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 09 15:07:15 localhost kernel: kvm-clock: using sched offset of 346833633890 cycles
+Jul 09 15:07:15 localhost kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Jul 09 15:07:15 localhost kernel: tsc: Detected 3399.996 MHz processor
+Jul 09 15:07:15 localhost kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 09 15:07:15 localhost kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 09 15:07:15 localhost kernel: AGP: No AGP bridge found
+Jul 09 15:07:15 localhost kernel: last_pfn = 0x140000 max_arch_pfn = 0x400000000
+Jul 09 15:07:15 localhost kernel: MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+Jul 09 15:07:15 localhost kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 09 15:07:15 localhost kernel: last_pfn = 0xbffda max_arch_pfn = 0x400000000
+Jul 09 15:07:15 localhost kernel: found SMP MP-table at [mem 0x000f5490-0x000f549f]
+Jul 09 15:07:15 localhost kernel: RAMDISK: [mem 0x2edf1000-0x336effff]
+Jul 09 15:07:15 localhost kernel: ACPI: Early table checksum verification disabled
+Jul 09 15:07:15 localhost kernel: ACPI: RSDP 0x00000000000F5290 000014 (v00 BOCHS )
+Jul 09 15:07:15 localhost kernel: ACPI: RSDT 0x00000000BFFE3B52 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: FACP 0x00000000BFFE396C 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: DSDT 0x00000000BFFDF040 00492C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: FACS 0x00000000BFFDF000 000040
+Jul 09 15:07:15 localhost kernel: ACPI: APIC 0x00000000BFFE39E0 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: SSDT 0x00000000BFFE3A60 0000CA (v01 BOCHS  VMGENID  00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: WAET 0x00000000BFFE3B2A 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving FACP table memory at [mem 0xbffe396c-0xbffe39df]
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving DSDT table memory at [mem 0xbffdf040-0xbffe396b]
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving FACS table memory at [mem 0xbffdf000-0xbffdf03f]
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving APIC table memory at [mem 0xbffe39e0-0xbffe3a5f]
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving SSDT table memory at [mem 0xbffe3a60-0xbffe3b29]
+Jul 09 15:07:15 localhost kernel: ACPI: Reserving WAET table memory at [mem 0xbffe3b2a-0xbffe3b51]
+Jul 09 15:07:15 localhost kernel: No NUMA configuration found
+Jul 09 15:07:15 localhost kernel: Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+Jul 09 15:07:15 localhost kernel: NODE_DATA(0) allocated [mem 0x13ffd2000-0x13fffcfff]
+Jul 09 15:07:15 localhost kernel: Zone ranges:
+Jul 09 15:07:15 localhost kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Jul 09 15:07:15 localhost kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Jul 09 15:07:15 localhost kernel:   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+Jul 09 15:07:15 localhost kernel:   Device   empty
+Jul 09 15:07:15 localhost kernel: Movable zone start for each node
+Jul 09 15:07:15 localhost kernel: Early memory node ranges
+Jul 09 15:07:15 localhost kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Jul 09 15:07:15 localhost kernel:   node   0: [mem 0x0000000000100000-0x00000000bffd9fff]
+Jul 09 15:07:15 localhost kernel:   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+Jul 09 15:07:15 localhost kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+Jul 09 15:07:15 localhost kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Jul 09 15:07:15 localhost kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+Jul 09 15:07:15 localhost kernel: On node 0, zone Normal: 38 pages in unavailable ranges
+Jul 09 15:07:15 localhost kernel: ACPI: PM-Timer IO Port: 0x608
+Jul 09 15:07:15 localhost kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Jul 09 15:07:15 localhost kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Jul 09 15:07:15 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Jul 09 15:07:15 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Jul 09 15:07:15 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Jul 09 15:07:15 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Jul 09 15:07:15 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Jul 09 15:07:15 localhost kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Jul 09 15:07:15 localhost kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+Jul 09 15:07:15 localhost kernel: kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+Jul 09 15:07:15 localhost kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Jul 09 15:07:15 localhost kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+Jul 09 15:07:15 localhost kernel: PM: hibernation: Registered nosave memory: [mem 0xbffda000-0xffffffff]
+Jul 09 15:07:15 localhost kernel: [mem 0xc0000000-0xfeffbfff] available for PCI devices
+Jul 09 15:07:15 localhost kernel: Booting paravirtualized kernel on KVM
+Jul 09 15:07:15 localhost kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Jul 09 15:07:15 localhost kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+Jul 09 15:07:15 localhost kernel: percpu: Embedded 86 pages/cpu s229376 r8192 d114688 u1048576
+Jul 09 15:07:15 localhost kernel: pcpu-alloc: s229376 r8192 d114688 u1048576 alloc=1*2097152
+Jul 09 15:07:15 localhost kernel: pcpu-alloc: [0] 0 1 
+Jul 09 15:07:15 localhost kernel: kvm-guest: PV spinlocks enabled
+Jul 09 15:07:15 localhost kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Jul 09 15:07:15 localhost kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-134-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+Jul 09 15:07:15 localhost kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Jul 09 15:07:15 localhost kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Jul 09 15:07:15 localhost kernel: Fallback order for Node 0: 0 
+Jul 09 15:07:15 localhost kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1031898
+Jul 09 15:07:15 localhost kernel: Policy zone: Normal
+Jul 09 15:07:15 localhost kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Jul 09 15:07:15 localhost kernel: AGP: Checking aperture...
+Jul 09 15:07:15 localhost kernel: AGP: No AGP bridge found
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# find /var/log -name "[7mauth.log[27mauth.log" 2?[K>/def[Kbv[Kv[K[Kv/null
+[?2004l/var/log/auth.log
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# find /var/log -name "[7mauth.log[27mauth.log" 2>/def[Kv/null -exec car[Kt {} \; |\[K \
+[?2004l[?2004h> [K> awk [K[K[K[K[7mawk '{print $4, $0}' | sed 's/\[[0-9]*\]//g' | sort[27m[C[Cawk '{print $4, $0}' | sed 's/\[[0-9]*\]//g' | sort
+[?2004lAccepted 2026-07-08T00:47:26.238327+00:00 eltex-template sshd: Accepted password for root from 172.16.8.4 port 56292 ssh2
+Accepted 2026-07-08T00:48:54.288218+00:00 eltex-template sshd: Accepted password for root from 172.16.8.4 port 46180 ssh2
+Accepted 2026-07-09T11:17:24.545245+00:00 eltex-practice2-v17 sshd: Accepted password for root from 172.16.8.4 port 39002 ssh2
+Accepted 2026-07-09T13:41:05.855537+00:00 eltex-practice2-v17 sshd: Accepted password for root from 172.16.8.4 port 52196 ssh2
+Accepted 2026-07-09T13:41:47.092481+00:00 eltex-practice2-v17 sshd: Accepted publickey for root from 172.16.8.4 port 54530 ssh2: RSA SHA256:l/qfATkJY+laS3PVk+MC9c+oDMXqIOi6EfEOt/fTvto
+Accepted 2026-07-09T13:45:41.520206+00:00 eltex-practice2-v17 sshd: Accepted publickey for root from 172.16.8.4 port 58524 ssh2: RSA SHA256:l/qfATkJY+laS3PVk+MC9c+oDMXqIOi6EfEOt/fTvto
+Accepted 2026-07-09T15:08:35.203267+00:00 localhost sshd: Accepted publickey for root from 172.16.8.4 port 56796 ssh2: RSA SHA256:l/qfATkJY+laS3PVk+MC9c+oDMXqIOi6EfEOt/fTvto
+Accepted 2026-07-09T15:12:16.667735+00:00 localhost sshd: Accepted publickey for root from 172.16.8.4 port 38286 ssh2: RSA SHA256:l/qfATkJY+laS3PVk+MC9c+oDMXqIOi6EfEOt/fTvto
+Acquired 2025-03-12T18:18:00.088542+00:00 eltex-template polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2025-03-12T18:25:39.817351+00:00 eltex-template polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-08T00:38:39.642835+00:00 eltex-template polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-08T00:50:31.510292+00:00 localhost polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T07:25:00.174206+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T08:08:10.721774+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T10:40:12.034871+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T10:45:29.124838+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T11:26:03.488240+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T11:38:05.246004+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T12:32:29.497450+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T12:57:53.060364+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T13:07:54.054004+00:00 eltex-practice2-v17 polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Acquired 2026-07-09T15:08:17.283520+00:00 localhost polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+add 2025-03-12T18:18:00.060224+00:00 eltex-template useradd: add 'tech' to group 'adm'
+add 2025-03-12T18:18:00.060227+00:00 eltex-template useradd: add 'tech' to group 'cdrom'
+add 2025-03-12T18:18:00.060228+00:00 eltex-template useradd: add 'tech' to group 'sudo'
+add 2025-03-12T18:18:00.060230+00:00 eltex-template useradd: add 'tech' to group 'dip'
+add 2025-03-12T18:18:00.060231+00:00 eltex-template useradd: add 'tech' to group 'plugdev'
+add 2025-03-12T18:18:00.060232+00:00 eltex-template useradd: add 'tech' to group 'lxd'
+add 2025-03-12T18:18:00.060233+00:00 eltex-template useradd: add 'tech' to shadow group 'adm'
+add 2025-03-12T18:18:00.060237+00:00 eltex-template useradd: add 'tech' to shadow group 'cdrom'
+add 2025-03-12T18:18:00.060238+00:00 eltex-template useradd: add 'tech' to shadow group 'sudo'
+add 2025-03-12T18:18:00.060239+00:00 eltex-template useradd: add 'tech' to shadow group 'dip'
+add 2025-03-12T18:18:00.060241+00:00 eltex-template useradd: add 'tech' to shadow group 'plugdev'
+add 2025-03-12T18:18:00.060242+00:00 eltex-template useradd: add 'tech' to shadow group 'lxd'
+add 2026-07-09T13:57:37.213964+00:00 eltex-practice2-v17 usermod: add 'user1' to group 'sharedgroup'
+add 2026-07-09T13:57:37.214094+00:00 eltex-practice2-v17 usermod: add 'user1' to shadow group 'sharedgroup'
+add 2026-07-09T13:57:42.247146+00:00 eltex-practice2-v17 usermod: add 'user2' to group 'sharedgroup'
+add 2026-07-09T13:57:42.247241+00:00 eltex-practice2-v17 usermod: add 'user2' to shadow group 'sharedgroup'
+add 2026-07-09T13:57:57.688684+00:00 eltex-practice2-v17 usermod: add 'user3' to group 'sharedgroup'
+add 2026-07-09T13:57:57.688818+00:00 eltex-practice2-v17 usermod: add 'user3' to shadow group 'sharedgroup'
+Attempted 2026-07-09T13:53:44.495935+00:00 eltex-practice2-v17 nologin: Attempted login by root (UID: 1003) on /dev/pts/0
+Attempted 2026-07-09T14:08:30.937484+00:00 eltex-practice2-v17 nologin: Attempted login by root (UID: 1003) on /dev/pts/0
+change 2026-07-09T13:53:35.574713+00:00 eltex-practice2-v17 usermod: change user 'user3' shell from '/bin/bash' to '/usr/sbin/nologin'
+changed 2026-07-09T13:51:11.831934+00:00 eltex-practice2-v17 chfn: changed user 'user2' information
+changed 2026-07-09T13:51:51.199581+00:00 eltex-practice2-v17 chfn: changed user 'user3' information
+changed 2026-07-09T14:32:53.613100+00:00 eltex-practice2-v17 chage: changed password expiry for user1
+changed 2026-07-09T14:32:55.968625+00:00 eltex-practice2-v17 chage: changed password expiry for user2
+changed 2026-07-09T14:32:57.442061+00:00 eltex-practice2-v17 chage: changed password expiry for user3
+Collecting 2025-03-12T18:19:47.582378+00:00 eltex-template polkitd: Collecting garbage unconditionally...
+Collecting 2025-03-12T18:19:47.583433+00:00 eltex-template polkitd: Collecting garbage unconditionally...
+Collecting 2025-03-12T18:20:00.359031+00:00 eltex-template polkitd: Collecting garbage unconditionally...
+Collecting 2025-03-12T18:20:00.359109+00:00 eltex-template polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T08:01:53.399309+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T08:01:53.399604+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T11:23:35.309910+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T11:23:35.310166+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T11:23:35.310281+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T11:23:35.310365+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T12:19:11.554878+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Collecting 2026-07-09T12:19:11.555882+00:00 eltex-practice2-v17 polkitd: Collecting garbage unconditionally...
+Connection 2026-07-09T13:40:55.394411+00:00 eltex-practice2-v17 sshd: Connection closed by authenticating user root 172.16.8.4 port 52178 [preauth]
+Connection 2026-07-09T13:40:55.540589+00:00 eltex-practice2-v17 sshd: Connection closed by authenticating user root 172.16.8.4 port 52184 [preauth]
+Creating 2025-03-12T18:25:54.607056+00:00 eltex-template systemd-logind: Creating /run/nologin, blocking further logins...
+Disconnected 2026-07-08T00:47:27.035770+00:00 eltex-template sshd: Disconnected from user root 172.16.8.4 port 56292
+Disconnected 2026-07-09T11:17:57.747366+00:00 eltex-practice2-v17 sshd: Disconnected from user root 172.16.8.4 port 39002
+Disconnected 2026-07-09T13:41:06.969417+00:00 eltex-practice2-v17 sshd: Disconnected from user root 172.16.8.4 port 52196
+Disconnected 2026-07-09T13:44:06.197557+00:00 eltex-practice2-v17 sshd: Disconnected from user root 172.16.8.4 port 54530
+Disconnected 2026-07-09T14:42:39.921165+00:00 eltex-practice2-v17 sshd: Disconnected from user root 172.16.8.4 port 58524
+Disconnected 2026-07-09T15:11:31.762937+00:00 localhost sshd: Disconnected from user root 172.16.8.4 port 56796
+Finished 2025-03-12T18:18:00.086007+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2025-03-12T18:19:47.583249+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2025-03-12T18:19:47.584214+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2025-03-12T18:20:00.359079+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2025-03-12T18:20:00.359167+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2025-03-12T18:25:39.812416+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-08T00:38:39.642033+00:00 eltex-template polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-08T00:50:31.509206+00:00 localhost polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T07:25:00.174120+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T08:01:53.399443+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T08:01:53.399684+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T08:08:10.721343+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T10:40:12.034455+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T10:45:29.124743+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:23:35.310105+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:23:35.310245+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:23:35.310331+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:23:35.310424+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:26:03.487120+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T11:38:05.245746+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T12:19:11.555509+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T12:19:11.556704+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T12:32:29.497260+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T12:57:53.060149+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T13:07:54.052479+00:00 eltex-practice2-v17 polkitd: Finished loading, compiling and executing 6 rules
+Finished 2026-07-09T15:08:17.283431+00:00 localhost polkitd: Finished loading, compiling and executing 6 rules
+group 2026-07-09T13:50:30.681521+00:00 eltex-practice2-v17 groupadd: group added to /etc/group: name=user2, GID=1002
+group 2026-07-09T13:50:32.097020+00:00 eltex-practice2-v17 groupadd: group added to /etc/gshadow: name=user2
+group 2026-07-09T13:51:32.493287+00:00 eltex-practice2-v17 groupadd: group added to /etc/group: name=user3, GID=1003
+group 2026-07-09T13:51:36.037362+00:00 eltex-practice2-v17 groupadd: group added to /etc/gshadow: name=user3
+group 2026-07-09T13:57:18.636356+00:00 eltex-practice2-v17 groupadd: group added to /etc/group: name=sharedgroup, GID=1004
+group 2026-07-09T13:57:18.687782+00:00 eltex-practice2-v17 groupadd: group added to /etc/gshadow: name=sharedgroup
+Loading 2025-03-12T18:18:00.062027+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:18:00.062030+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2025-03-12T18:19:47.582393+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:19:47.582415+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2025-03-12T18:19:47.583450+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:19:47.583468+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2025-03-12T18:20:00.359049+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:20:00.359065+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2025-03-12T18:20:00.359124+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:20:00.359137+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2025-03-12T18:25:38.941489+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2025-03-12T18:25:38.952270+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-08T00:38:39.585146+00:00 eltex-template polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-08T00:38:39.585405+00:00 eltex-template polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-08T00:50:30.294539+00:00 localhost polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-08T00:50:30.537814+00:00 localhost polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T07:25:00.173806+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T07:25:00.173923+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T08:01:53.399384+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T08:01:53.399409+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T08:01:53.399639+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T08:01:53.399660+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T08:08:10.720710+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T08:08:10.720903+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T10:40:12.033980+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T10:40:12.034310+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T10:45:29.124541+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T10:45:29.124658+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310007+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310058+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310197+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310220+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310297+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310315+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310388+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:23:35.310404+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:26:03.486511+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:26:03.486732+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T11:38:05.245540+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T11:38:05.245660+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T12:19:11.554895+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T12:19:11.554909+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T12:19:11.555931+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T12:19:11.556681+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T12:32:29.496552+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T12:32:29.497139+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T12:57:53.059881+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T12:57:53.060028+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T13:07:54.051863+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T13:07:54.051894+00:00 eltex-practice2-v17 polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+Loading 2026-07-09T15:08:17.283421+00:00 localhost polkitd: Loading rules from directory /etc/polkit-1/rules.d
+Loading 2026-07-09T15:08:17.283428+00:00 localhost polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+members 2026-07-09T13:51:15.623425+00:00 eltex-practice2-v17 gpasswd: members of group users set by root to user2
+members 2026-07-09T13:51:51.369645+00:00 eltex-practice2-v17 gpasswd: members of group users set by root to user2,user3
+new 2025-03-12T18:18:00.060222+00:00 eltex-template useradd: new group: name=tech, GID=1000
+new 2025-03-12T18:18:00.060223+00:00 eltex-template useradd: new user: name=tech, UID=1000, GID=1000, home=/home/tech, shell=/bin/bash, from=none
+New 2025-03-12T18:18:00.062024+00:00 eltex-template systemd-logind: New seat seat0.
+New 2025-03-12T18:18:20.616020+00:00 eltex-template systemd-logind: New session 1 of user tech.
+New 2025-03-12T18:25:38.918946+00:00 eltex-template systemd-logind: New seat seat0.
+New 2026-07-08T00:38:39.334565+00:00 eltex-template systemd-logind: New seat seat0.
+New 2026-07-08T00:47:26.258716+00:00 eltex-template systemd-logind: New session 2 of user root.
+New 2026-07-08T00:50:27.447869+00:00 localhost systemd-logind: New seat seat0.
+New 2026-07-09T11:17:24.564293+00:00 eltex-practice2-v17 systemd-logind: New session 248 of user root.
+New 2026-07-09T13:41:05.873451+00:00 eltex-practice2-v17 systemd-logind: New session 266 of user root.
+New 2026-07-09T13:41:47.109314+00:00 eltex-practice2-v17 systemd-logind: New session 268 of user root.
+New 2026-07-09T13:45:41.556616+00:00 eltex-practice2-v17 systemd-logind: New session 271 of user root.
+new 2026-07-09T13:48:47.509528+00:00 eltex-practice2-v17 useradd: new group: name=user1, GID=1001
+new 2026-07-09T13:48:47.509699+00:00 eltex-practice2-v17 useradd: new user: name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+new 2026-07-09T13:50:32.097574+00:00 eltex-practice2-v17 groupadd: new group: name=user2, GID=1002
+new 2026-07-09T13:50:40.602180+00:00 eltex-practice2-v17 useradd: new user: name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+new 2026-07-09T13:51:36.037928+00:00 eltex-practice2-v17 groupadd: new group: name=user3, GID=1003
+new 2026-07-09T13:51:37.035049+00:00 eltex-practice2-v17 useradd: new user: name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+new 2026-07-09T13:57:18.688627+00:00 eltex-practice2-v17 groupadd: new group: name=sharedgroup, GID=1004
+New 2026-07-09T15:08:17.283250+00:00 localhost systemd-logind: New seat seat0.
+New 2026-07-09T15:08:36.654439+00:00 localhost systemd-logind: New session 1 of user root.
+New 2026-07-09T15:12:18.389543+00:00 localhost systemd-logind: New session 3 of user root.
+PAM 2025-03-12T18:18:07.867349+00:00 eltex-template login: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+PAM 2025-03-12T18:18:07.867498+00:00 eltex-template login: PAM adding faulty module: pam_lastlog.so
+pam_unix(chpasswd:chauthtok): 2026-07-08T00:47:27.034571+00:00 eltex-template chpasswd: pam_unix(chpasswd:chauthtok): password changed for root
+pam_unix(cron:session): 2025-03-12T18:25:01.446977+00:00 eltex-template CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2025-03-12T18:25:01.490225+00:00 eltex-template CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T00:45:01.746561+00:00 eltex-template CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T00:45:01.748684+00:00 eltex-template CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T00:55:05.932129+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T00:55:08.159329+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:05:01.970756+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:05:01.970925+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:15:01.974910+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:15:03.097679+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:17:01.978510+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:17:02.017901+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:25:01.021102+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:25:01.022479+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:35:01.025880+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:35:01.027342+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:45:01.030264+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:45:01.031247+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T01:55:01.034530+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T01:55:01.035488+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:05:01.038823+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:05:01.143369+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:15:01.043041+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:15:01.044282+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:17:01.046531+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:17:01.162864+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:25:01.050422+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:25:01.524610+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:35:01.054773+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:35:01.055792+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:45:01.059003+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:45:01.060097+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T02:55:01.063167+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T02:55:01.064503+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:05:01.067526+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:05:01.068507+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:10:01.071102+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:10:01.189701+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:15:01.074254+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:15:01.075294+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:17:01.077391+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:17:01.078445+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:25:01.081294+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:25:01.082480+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:35:01.085695+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:35:01.086759+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:45:01.089823+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:45:01.183601+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T03:55:01.094269+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T03:55:01.095277+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:05:01.098597+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:05:01.100183+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:15:01.103346+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:15:01.104562+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:17:01.106893+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:17:02.754275+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:25:01.110724+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:25:02.834793+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:35:01.114935+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:35:01.116319+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:45:01.119250+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:45:03.949091+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T04:55:01.123448+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T04:55:01.124476+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:05:01.127591+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:05:01.129094+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:15:01.132066+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:15:01.133075+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:17:01.135290+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:17:01.685707+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:25:01.139093+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:25:01.383476+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:35:01.143179+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:35:01.144284+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:45:01.147418+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:45:01.148526+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T05:55:01.151711+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T05:55:01.152703+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:05:01.155888+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:05:01.407162+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:15:01.162095+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:15:01.163348+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:17:01.165660+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:17:02.372949+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:25:01.169772+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:25:01.630786+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:25:01.630949+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:25:01.630976+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:35:01.212009+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:35:01.213153+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:45:01.216056+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:45:01.217046+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T06:55:01.220134+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T06:55:01.438262+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:05:01.224891+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:05:01.226108+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:15:01.229466+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:15:01.230646+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:17:01.232933+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:17:01.287692+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:25:01.236786+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:25:01.539084+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:35:01.241164+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:35:01.242305+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:45:01.245218+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:45:01.246187+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T07:55:01.249372+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T07:55:01.250344+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:05:01.253193+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:05:01.257471+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:15:01.257406+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:15:01.258469+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:17:01.260751+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:17:02.119700+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:25:01.264627+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:25:01.327421+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:35:01.268889+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:35:01.270167+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:45:01.273640+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:45:01.274939+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T08:55:01.278023+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T08:55:01.279026+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:05:01.282245+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:05:01.283579+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:15:01.286684+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:15:01.287925+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:17:01.290082+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:17:01.396900+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:25:01.293970+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:25:01.548266+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:35:01.298421+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:35:01.299653+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:45:01.302906+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:45:01.303903+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T09:55:01.307046+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T09:55:01.308035+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:05:01.311181+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:05:01.312385+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:15:01.315884+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:15:01.316912+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:17:01.318973+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:17:02.131705+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:25:01.323052+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:25:01.374342+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:35:01.327631+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:35:01.328737+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:45:01.332506+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:45:01.333855+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T10:55:01.336985+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T10:55:01.338137+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:05:01.341291+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:05:01.342253+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:15:01.345371+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:15:01.346401+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:17:01.348410+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:17:01.477395+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:25:01.352602+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:25:02.370492+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:35:01.356700+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:35:01.357671+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:45:01.360722+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:45:01.361704+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T11:55:01.365549+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T11:55:01.367017+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:05:01.370350+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:05:02.109006+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:15:01.375097+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:15:01.376140+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:17:01.378357+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:17:02.251543+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:25:01.382495+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:25:02.043890+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:35:01.386644+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:35:01.387735+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:45:01.390994+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:45:01.392046+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T12:55:01.395072+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T12:55:01.396132+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:05:01.399213+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:05:01.400227+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:15:01.403364+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:15:01.404693+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:17:01.407156+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:17:02.216292+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:25:01.411722+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:25:01.564607+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:35:01.415869+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:35:01.417084+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:45:01.420085+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:45:01.421055+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T13:55:01.424260+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T13:55:01.425549+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:05:01.428969+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:05:01.430104+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:15:01.433204+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:15:01.434226+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:17:01.436439+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:17:01.952116+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:25:01.440716+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:25:02.669317+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:35:01.445237+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:35:01.446216+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:45:01.449395+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:45:01.450410+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T14:55:01.453779+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T14:55:01.454839+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:05:01.457909+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:05:01.459161+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:15:01.462406+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:15:01.463377+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:17:01.465622+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:17:01.986558+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:25:01.469947+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:25:01.672778+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:35:01.474216+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:35:01.475429+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:45:01.478678+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:45:01.479676+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T15:55:01.482589+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T15:55:01.483662+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:05:01.486716+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:05:01.487714+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:15:01.490970+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:15:01.670875+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:17:01.494457+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:17:01.495449+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:25:01.498234+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:25:01.499220+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:35:01.502484+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:35:01.503562+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:45:01.506622+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:45:01.507583+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T16:55:01.511007+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T16:55:01.512103+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:05:01.515277+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:05:01.516295+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:15:01.519599+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:15:01.521070+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:17:01.523123+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:17:01.994240+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:25:01.527151+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:25:02.776242+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:35:01.531592+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:35:01.532682+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:45:01.535883+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:45:01.537108+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T17:55:01.540202+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T17:55:01.541352+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:05:01.544550+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:05:01.546409+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:15:01.549335+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:15:01.550365+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:17:01.552498+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:17:02.457481+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:25:01.556724+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:25:02.728321+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:35:01.560840+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:35:01.562269+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:45:01.565498+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:45:01.566542+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T18:55:01.570345+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T18:55:02.174071+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:05:01.574538+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:05:01.575644+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:15:01.579231+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:15:01.763865+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:17:01.582604+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:17:01.583750+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:25:01.586473+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:25:01.588091+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:35:01.591122+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:35:01.592232+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:45:01.595363+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:45:03.925969+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T19:55:01.599328+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T19:55:01.600316+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:05:01.603605+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:05:01.604766+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:15:01.607995+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:15:01.609182+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:17:01.611142+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:17:01.992346+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:25:01.614905+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:25:02.051635+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:35:01.619292+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:35:01.620270+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:45:01.623210+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:45:01.624203+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T20:55:01.627505+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T20:55:01.628608+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:05:01.631857+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:05:01.632899+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:15:01.636116+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:15:01.637472+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:17:01.639688+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:17:02.339511+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:25:01.643756+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:25:01.649121+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:35:01.651329+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:35:01.651490+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:45:01.655067+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:45:01.656174+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T21:55:01.659351+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T21:55:01.660381+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:05:01.663523+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:05:01.664487+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:15:01.667658+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:15:01.668636+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:17:01.670690+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:17:02.482008+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:25:01.674756+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:25:03.694194+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:35:01.679205+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:35:01.680199+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:45:01.683211+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:45:01.684300+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T22:55:01.687408+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T22:55:01.688454+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:05:01.691588+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:05:01.692757+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:15:01.695934+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:15:01.697212+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:17:01.699611+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:17:02.578494+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:25:01.703609+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:25:03.204501+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:35:01.707722+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:35:01.708685+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:45:01.711650+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:45:01.712656+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:55:01.715806+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:55:01.717401+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-08T23:59:01.719919+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-08T23:59:01.779978+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:05:01.723862+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:05:02.410487+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:15:01.728199+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:15:01.729485+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:17:01.731754+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:17:02.570011+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:25:01.736350+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:25:03.355090+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:35:01.740801+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:35:01.741831+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:45:01.745045+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:45:01.746137+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T00:55:01.749485+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T00:55:02.498980+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:05:01.753830+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:05:01.754857+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:15:01.757935+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:15:01.759409+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:17:01.761255+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:17:02.595152+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:25:01.765082+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:25:01.766148+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:35:01.769230+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:35:01.770253+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:45:01.773541+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:45:01.774546+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T01:55:01.777908+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T01:55:01.779205+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:05:01.782364+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:05:01.783338+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:15:01.786735+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:15:02.463552+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:17:01.790322+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:17:01.791304+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:25:01.794178+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:25:01.795189+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:35:01.798276+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:35:01.799330+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:45:01.802382+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:45:01.803446+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T02:55:01.806741+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T02:55:01.808059+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:05:01.811234+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:05:01.812389+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:10:01.814718+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:10:03.666087+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:15:01.817843+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:15:03.760250+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:17:01.821200+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:17:01.822342+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:25:01.824993+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:25:01.825976+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:35:01.829095+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:35:01.830305+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:45:01.833712+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:45:01.835098+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T03:55:01.838066+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T03:55:01.839052+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:05:01.843529+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:05:01.844635+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:15:01.848190+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:15:01.849243+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:17:01.851339+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:17:02.907141+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:25:01.855838+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:25:02.438943+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:35:01.860507+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:35:01.861777+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:45:01.865049+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:45:01.866206+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T04:55:01.869769+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T04:55:01.870945+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:05:01.874015+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:05:01.875158+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:15:01.878067+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:15:01.879272+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:17:01.881865+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:17:02.383611+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:25:01.886076+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:25:02.656889+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:35:01.890317+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:35:01.891519+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:45:01.894736+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:45:01.895955+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T05:55:01.899508+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T05:55:01.900690+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:05:01.903966+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:05:01.905399+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:15:01.909654+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:15:01.911102+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:17:01.913575+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:17:03.147219+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:25:01.918518+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:25:03.434396+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:25:03.434683+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:25:03.434735+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:35:01.927478+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:35:01.928617+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:45:01.931922+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:45:01.933209+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T06:55:03.424811+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T06:55:03.426724+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:05:01.430330+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:05:01.431801+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:15:01.435267+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:15:01.436482+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:17:01.438814+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:17:01.439801+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:25:01.442802+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:25:01.444442+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:35:01.447658+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:35:07.669034+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:45:01.451996+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:45:04.583762+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T07:55:01.456637+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T07:55:01.458370+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T08:05:01.462104+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T08:05:01.463688+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T08:15:01.467104+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T08:15:12.796297+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T08:17:01.471437+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T08:17:01.473340+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T08:25:02.254519+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T08:25:02.256144+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.298271+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.298684+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299048+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299152+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299213+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299293+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299374+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299430+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299482+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299574+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299629+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:41:29.299821+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299889+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299902+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299928+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:41:29.299940+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:45:01.649732+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:45:02.263411+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T09:55:01.791336+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T09:55:07.378660+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:07:47.622632+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:07:47.622846+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:15:01.426666+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:15:01.428075+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:17:01.430872+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:17:01.432859+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:25:02.925086+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:25:09.826485+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:35:01.930302+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:35:01.931405+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:45:02.458945+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:45:02.460219+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T10:55:01.463832+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T10:55:01.465133+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:05:01.915212+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:05:01.916750+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:15:02.331424+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:15:02.332658+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:17:01.334844+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:17:01.335960+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:25:01.339326+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:25:04.358987+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:35:01.343844+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:35:01.345173+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:45:01.348896+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:45:01.350292+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T11:55:01.615686+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T11:55:01.617310+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:05:01.620841+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:05:05.641368+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:15:01.625401+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:15:01.626524+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:17:01.629124+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:17:01.630442+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:25:02.084238+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:25:02.085591+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:35:02.475556+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:35:02.477163+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:45:01.480645+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:45:01.482030+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T12:55:01.485662+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T12:55:01.487172+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:05:01.491458+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:05:01.492748+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:15:01.496402+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:15:01.581998+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:17:01.500352+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:17:01.501513+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:25:01.505696+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:25:01.507270+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:35:01.510673+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:35:04.441616+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:45:01.515701+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:45:01.517423+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T13:55:01.520742+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T13:55:01.522046+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:05:01.525700+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:05:01.597893+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:15:01.530561+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:15:01.531693+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:17:01.534048+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:17:01.535139+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:25:01.538069+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:25:01.539181+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:35:01.542759+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:35:01.547499+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:45:01.547681+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:45:01.548899+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T14:55:01.552869+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T14:55:01.554426+00:00 eltex-practice2-v17 CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T15:15:01.502234+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T15:15:01.736266+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(cron:session): 2026-07-09T15:17:01.570623+00:00 localhost CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(cron:session): 2026-07-09T15:17:01.791356+00:00 localhost CRON: pam_unix(cron:session): session closed for user root
+pam_unix(login:session): 2025-03-12T18:18:20.503804+00:00 eltex-template login: pam_unix(login:session): session opened for user tech(uid=1000) by tech(uid=0)
+pam_unix(passwd:chauthtok): 2025-03-12T18:21:46.852814+00:00 eltex-template passwd: pam_unix(passwd:chauthtok): password changed for root
+pam_unix(passwd:chauthtok): 2026-07-09T13:49:34.048618+00:00 eltex-practice2-v17 passwd: pam_unix(passwd:chauthtok): password changed for user1
+pam_unix(passwd:chauthtok): 2026-07-09T13:51:04.572559+00:00 eltex-practice2-v17 passwd: pam_unix(passwd:chauthtok): password changed for user2
+pam_unix(passwd:chauthtok): 2026-07-09T13:51:45.838045+00:00 eltex-practice2-v17 passwd: pam_unix(passwd:chauthtok): password changed for user3
+pam_unix(sshd:session): 2026-07-08T00:47:26.239053+00:00 eltex-template sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-08T00:47:27.035815+00:00 eltex-template sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T11:17:24.546175+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-09T11:17:57.747399+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T13:41:05.856367+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-09T13:41:06.969437+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T13:41:47.093076+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-09T13:44:06.197597+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T13:45:41.555698+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-09T14:42:39.921245+00:00 eltex-practice2-v17 sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T15:08:36.065596+00:00 localhost sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sshd:session): 2026-07-09T15:11:31.762958+00:00 localhost sshd: pam_unix(sshd:session): session closed for user root
+pam_unix(sshd:session): 2026-07-09T15:12:18.389194+00:00 localhost sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(sudo:session): 2025-03-12T18:18:47.708815+00:00 eltex-template sudo: pam_unix(sudo:session): session opened for user root(uid=0) by tech(uid=1000)
+pam_unix(sudo:session): 2025-03-12T18:25:04.979006+00:00 eltex-template sudo: pam_unix(sudo:session): session closed for user root
+pam_unix(su-l:session): 2025-03-12T18:18:47.717367+00:00 eltex-template su: pam_unix(su-l:session): session opened for user root(uid=0) by tech(uid=0)
+pam_unix(su-l:session): 2025-03-12T18:25:04.978464+00:00 eltex-template su: pam_unix(su-l:session): session closed for user root
+pam_unix(su-l:session): 2026-07-09T14:08:18.864900+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:08:18.869315+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user1
+pam_unix(su-l:session): 2026-07-09T14:08:26.108947+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:08:26.113484+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:08:30.935704+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user3(uid=1003) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:08:31.052659+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user3
+pam_unix(su-l:session): 2026-07-09T14:10:39.532894+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:10:39.537603+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user1
+pam_unix(su-l:session): 2026-07-09T14:11:10.654375+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:11:10.658650+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:11:48.260044+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:11:48.265307+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user1
+pam_unix(su-l:session): 2026-07-09T14:11:55.109557+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:11:55.114020+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user1
+pam_unix(su-l:session): 2026-07-09T14:14:04.235353+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:14:04.240369+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:14:18.096866+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:14:18.101332+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user1
+pam_unix(su-l:session): 2026-07-09T14:16:51.153999+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:16:51.154046+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:21:38.482189+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:21:38.487207+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:23:10.949460+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:23:10.950417+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:29:20.558993+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:29:29.500123+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:30:22.567993+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:30:39.967954+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su-l:session): 2026-07-09T14:31:01.983016+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+pam_unix(su-l:session): 2026-07-09T14:32:16.647923+00:00 eltex-practice2-v17 su: pam_unix(su-l:session): session closed for user user2
+pam_unix(su:session): 2026-07-09T13:53:44.471089+00:00 eltex-practice2-v17 su: pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+pam_unix(su:session): 2026-07-09T13:53:45.876248+00:00 eltex-practice2-v17 su: pam_unix(su:session): session closed for user user3
+pam_unix(su:session): 2026-07-09T13:54:06.766733+00:00 eltex-practice2-v17 su: pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+pam_unix(su:session): 2026-07-09T13:54:22.496077+00:00 eltex-practice2-v17 su: pam_unix(su:session): session closed for user user3
+pam_unix(su:session): 2026-07-09T14:09:53.378891+00:00 eltex-practice2-v17 su: pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+pam_unix(su:session): 2026-07-09T14:09:53.381097+00:00 eltex-practice2-v17 su: pam_unix(su:session): session closed for user user3
+pam_unix(systemd-user:session): 2025-03-12T18:18:20.677853+00:00 eltex-template (systemd): pam_unix(systemd-user:session): session opened for user tech(uid=1000) by tech(uid=0)
+pam_unix(systemd-user:session): 2026-07-08T00:47:26.271376+00:00 eltex-template (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-08T00:47:37.906053+00:00 eltex-template (sd-pam): pam_unix(systemd-user:session): session closed for user root
+pam_unix(systemd-user:session): 2026-07-09T11:17:24.571184+00:00 eltex-practice2-v17 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-09T13:41:05.881412+00:00 eltex-practice2-v17 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-09T13:41:47.115166+00:00 eltex-practice2-v17 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-09T13:45:41.555979+00:00 eltex-practice2-v17 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-09T15:08:40.145001+00:00 localhost (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+pam_unix(systemd-user:session): 2026-07-09T15:12:18.389434+00:00 localhost (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+password 2025-03-12T18:18:00.060245+00:00 eltex-template passwd: password for 'tech' changed by 'root'
+Received 2026-07-08T00:47:27.035682+00:00 eltex-template sshd: Received disconnect from 172.16.8.4 port 56292:11: disconnected by user
+Received 2026-07-09T11:17:57.747003+00:00 eltex-practice2-v17 sshd: Received disconnect from 172.16.8.4 port 39002:11: disconnected by user
+Received 2026-07-09T11:47:51.273341+00:00 eltex-practice2-v17 sshd: Received signal 15; terminating.
+Received 2026-07-09T11:58:54.572012+00:00 eltex-practice2-v17 sshd: Received signal 15; terminating.
+Received 2026-07-09T12:32:29.495455+00:00 eltex-practice2-v17 sshd: Received signal 15; terminating.
+Received 2026-07-09T13:41:06.969309+00:00 eltex-practice2-v17 sshd: Received disconnect from 172.16.8.4 port 52196:11: disconnected by user
+Received 2026-07-09T13:44:06.197423+00:00 eltex-practice2-v17 sshd: Received disconnect from 172.16.8.4 port 54530:11: disconnected by user
+Received 2026-07-09T14:42:39.920988+00:00 eltex-practice2-v17 sshd: Received disconnect from 172.16.8.4 port 58524:11: disconnected by user
+Received 2026-07-09T15:11:31.762771+00:00 localhost sshd: Received disconnect from 172.16.8.4 port 56796:11: disconnected by user
+Reloading 2025-03-12T18:19:47.582335+00:00 eltex-template polkitd: Reloading rules
+Reloading 2025-03-12T18:19:47.583329+00:00 eltex-template polkitd: Reloading rules
+Reloading 2025-03-12T18:20:00.359001+00:00 eltex-template polkitd: Reloading rules
+Reloading 2025-03-12T18:20:00.359095+00:00 eltex-template polkitd: Reloading rules
+Reloading 2026-07-09T08:01:52.424086+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T08:01:53.399466+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T11:23:34.433918+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T11:23:35.310147+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T11:23:35.310261+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T11:23:35.310347+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T12:19:11.554839+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Reloading 2026-07-09T12:19:11.555833+00:00 eltex-practice2-v17 polkitd: Reloading rules
+Removed 2026-07-08T00:47:27.676123+00:00 eltex-template systemd-logind: Removed session 2.
+Removed 2026-07-09T11:17:57.749894+00:00 eltex-practice2-v17 systemd-logind: Removed session 248.
+Removed 2026-07-09T13:41:06.971742+00:00 eltex-practice2-v17 systemd-logind: Removed session 266.
+Removed 2026-07-09T13:44:06.199932+00:00 eltex-practice2-v17 systemd-logind: Removed session 268.
+Removed 2026-07-09T14:42:39.923907+00:00 eltex-practice2-v17 systemd-logind: Removed session 271.
+Removed 2026-07-09T15:11:31.765145+00:00 localhost systemd-logind: Removed session 1.
+Server 2026-07-08T00:46:31.908813+00:00 eltex-template sshd: Server listening on :: port 22.
+Server 2026-07-09T11:17:08.855908+00:00 eltex-practice2-v17 sshd: Server listening on 0.0.0.0 port 22.
+Server 2026-07-09T11:17:08.856388+00:00 eltex-practice2-v17 sshd: Server listening on :: port 22.
+Server 2026-07-09T11:47:56.954067+00:00 eltex-practice2-v17 sshd: Server listening on 0.0.0.0 port 22.
+Server 2026-07-09T11:47:56.954209+00:00 eltex-practice2-v17 sshd: Server listening on :: port 22.
+Server 2026-07-09T11:58:54.596770+00:00 eltex-practice2-v17 sshd: Server listening on 0.0.0.0 port 22.
+Server 2026-07-09T11:58:54.597586+00:00 eltex-practice2-v17 sshd: Server listening on :: port 22.
+Server 2026-07-09T12:32:29.495997+00:00 eltex-practice2-v17 sshd: Server listening on 0.0.0.0 port 22.
+Server 2026-07-09T12:32:29.496100+00:00 eltex-practice2-v17 sshd: Server listening on :: port 22.
+Server 2026-07-09T15:08:17.403614+00:00 localhost sshd: Server listening on 0.0.0.0 port 22.
+Server 2026-07-09T15:08:17.403682+00:00 localhost sshd: Server listening on :: port 22.
+Session 2026-07-08T00:47:27.037286+00:00 eltex-template systemd-logind: Session 2 logged out. Waiting for processes to exit.
+Session 2026-07-09T11:17:57.749270+00:00 eltex-practice2-v17 systemd-logind: Session 248 logged out. Waiting for processes to exit.
+Session 2026-07-09T13:41:06.971207+00:00 eltex-practice2-v17 systemd-logind: Session 266 logged out. Waiting for processes to exit.
+Session 2026-07-09T13:44:06.199549+00:00 eltex-practice2-v17 systemd-logind: Session 268 logged out. Waiting for processes to exit.
+Session 2026-07-09T14:42:39.923328+00:00 eltex-practice2-v17 systemd-logind: Session 271 logged out. Waiting for processes to exit.
+Session 2026-07-09T15:11:31.764574+00:00 localhost systemd-logind: Session 1 logged out. Waiting for processes to exit.
+ssh_dispatch_run_fatal: 2026-07-08T00:46:31.910667+00:00 eltex-template sshd: ssh_dispatch_run_fatal: Connection from 172.16.8.4 port 36842: Broken pipe [preauth]
+System 2025-03-12T18:25:21.986948+00:00 eltex-template systemd-logind: System is rebooting.
+System 2025-03-12T18:25:54.706712+00:00 eltex-template systemd-logind: System is powering down (hypervisor initiated shutdown).
+tech 2025-03-12T18:18:47.708692+00:00 eltex-template sudo:     tech : TTY=tty1 ; PWD=/home/tech ; USER=root ; COMMAND=/usr/bin/su -
+The 2025-03-12T18:25:21.938238+00:00 eltex-template systemd-logind: The system will reboot now!
+(to 2025-03-12T18:18:47.717281+00:00 eltex-template su: (to root) root on pts/0
+(to 2026-07-09T13:53:44.470728+00:00 eltex-practice2-v17 su: (to user3) root on pts/0
+(to 2026-07-09T13:54:06.766356+00:00 eltex-practice2-v17 su: (to user3) root on pts/0
+(to 2026-07-09T14:08:18.864498+00:00 eltex-practice2-v17 su: (to user1) root on pts/0
+(to 2026-07-09T14:08:26.108554+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:08:30.935225+00:00 eltex-practice2-v17 su: (to user3) root on pts/0
+(to 2026-07-09T14:09:53.378502+00:00 eltex-practice2-v17 su: (to user3) root on pts/0
+(to 2026-07-09T14:10:39.532388+00:00 eltex-practice2-v17 su: (to user1) root on pts/0
+(to 2026-07-09T14:11:10.653976+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:11:48.259638+00:00 eltex-practice2-v17 su: (to user1) root on pts/0
+(to 2026-07-09T14:11:55.109178+00:00 eltex-practice2-v17 su: (to user1) root on pts/0
+(to 2026-07-09T14:14:04.234989+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:14:18.096355+00:00 eltex-practice2-v17 su: (to user1) root on pts/0
+(to 2026-07-09T14:16:50.976639+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:21:38.481792+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:23:10.944036+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:29:20.553890+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:30:22.567520+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+(to 2026-07-09T14:31:01.982617+00:00 eltex-practice2-v17 su: (to user2) root on pts/0
+Watching 2025-03-12T18:18:00.062033+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+Watching 2025-03-12T18:18:00.062035+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Watching 2025-03-12T18:25:38.918948+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+Watching 2025-03-12T18:25:38.918949+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Watching 2026-07-08T00:38:39.334571+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+Watching 2026-07-08T00:38:39.334574+00:00 eltex-template systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Watching 2026-07-08T00:50:27.609254+00:00 localhost systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+Watching 2026-07-08T00:50:27.609396+00:00 localhost systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Watching 2026-07-09T15:08:17.283271+00:00 localhost systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+Watching 2026-07-09T15:08:17.283277+00:00 localhost systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mfind /var/log -name "auth.log" 2>/dev/null -exec cat {} \; | \[27m
+[7mawk '{print $4}' | sed 's/\[[0-9]*\]//g' | sort | uniq -c | sort -rn[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /var/log -name "auth.log" 2>/dev/null -exec cat {} \; | \
+awk '{print $4}' | sed 's/\[[0-9]*\]//g' | sort | uniq -c | sort -rn
+[?2004l    552 pam_unix(cron:session):
+     52 Loading
+     32 pam_unix(su-l:session):
+     26 Finished
+     19 (to
+     18 add
+     14 Acquired
+     13 pam_unix(sshd:session):
+     13 New
+     12 Reloading
+     12 Collecting
+     11 Server
+     10 Watching
+      9 Received
+      9 pam_unix(systemd-user:session):
+      9 new
+      8 Accepted
+      6 Session
+      6 Removed
+      6 pam_unix(su:session):
+      6 group
+      6 Disconnected
+      5 changed
+      4 pam_unix(passwd:chauthtok):
+      2 System
+      2 pam_unix(sudo:session):
+      2 PAM
+      2 members
+      2 Connection
+      2 Attempted
+      1 The
+      1 tech
+      1 ssh_dispatch_run_fatal:
+      1 password
+      1 pam_unix(login:session):
+      1 pam_unix(chpasswd:chauthtok):
+      1 Creating
+      1 change
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# пкуз[K[K[K[Kgrep "user/sbin/nologin" /etc/passwd
+[?2004l[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# grep "user/sbin/nologin" /etc/passwd[1P
+[?2004ldaemon:x:1:1:daemon:/usr/sbin:/[01;31m[Kusr/sbin/nologin[m[K
+bin:x:2:2:bin:/bin:/[01;31m[Kusr/sbin/nologin[m[K
+sys:x:3:3:sys:/dev:/[01;31m[Kusr/sbin/nologin[m[K
+games:x:5:60:games:/usr/games:/[01;31m[Kusr/sbin/nologin[m[K
+man:x:6:12:man:/var/cache/man:/[01;31m[Kusr/sbin/nologin[m[K
+lp:x:7:7:lp:/var/spool/lpd:/[01;31m[Kusr/sbin/nologin[m[K
+mail:x:8:8:mail:/var/mail:/[01;31m[Kusr/sbin/nologin[m[K
+news:x:9:9:news:/var/spool/news:/[01;31m[Kusr/sbin/nologin[m[K
+uucp:x:10:10:uucp:/var/spool/uucp:/[01;31m[Kusr/sbin/nologin[m[K
+proxy:x:13:13:proxy:/bin:/[01;31m[Kusr/sbin/nologin[m[K
+www-data:x:33:33:www-data:/var/www:/[01;31m[Kusr/sbin/nologin[m[K
+backup:x:34:34:backup:/var/backups:/[01;31m[Kusr/sbin/nologin[m[K
+list:x:38:38:Mailing List Manager:/var/list:/[01;31m[Kusr/sbin/nologin[m[K
+irc:x:39:39:ircd:/run/ircd:/[01;31m[Kusr/sbin/nologin[m[K
+_apt:x:42:65534::/nonexistent:/[01;31m[Kusr/sbin/nologin[m[K
+nobody:x:65534:65534:nobody:/nonexistent:/[01;31m[Kusr/sbin/nologin[m[K
+systemd-network:x:998:998:systemd Network Management:/:/[01;31m[Kusr/sbin/nologin[m[K
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/[01;31m[Kusr/sbin/nologin[m[K
+messagebus:x:101:102::/nonexistent:/[01;31m[Kusr/sbin/nologin[m[K
+systemd-resolve:x:992:992:systemd Resolver:/:/[01;31m[Kusr/sbin/nologin[m[K
+polkitd:x:991:991:User for polkitd:/:/[01;31m[Kusr/sbin/nologin[m[K
+syslog:x:103:104::/nonexistent:/[01;31m[Kusr/sbin/nologin[m[K
+uuidd:x:104:105::/run/uuidd:/[01;31m[Kusr/sbin/nologin[m[K
+tcpdump:x:105:107::/nonexistent:/[01;31m[Kusr/sbin/nologin[m[K
+landscape:x:107:109::/var/lib/landscape:/[01;31m[Kusr/sbin/nologin[m[K
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/[01;31m[Kusr/sbin/nologin[m[K
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/[01;31m[Kusr/sbin/nologin[m[K
+sshd:x:109:65534::/run/sshd:/[01;31m[Kusr/sbin/nologin[m[K
+user3:x:1003:1003:,,,:/home/user3:/[01;31m[Kusr/sbin/nologin[m[K
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mgrep "/usr/sbin/nologin" /etc/passwd | cut -d: -f1,3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep "/usr/sbin/nologin" /etc/passwd | cut -d: -f1,3
+[?2004ldaemon:1
+bin:2
+sys:3
+games:5
+man:6
+lp:7
+mail:8
+news:9
+uucp:10
+proxy:13
+www-data:33
+backup:34
+list:38
+irc:39
+_apt:42
+nobody:65534
+systemd-network:998
+systemd-timesync:997
+messagebus:101
+systemd-resolve:992
+polkitd:991
+syslog:103
+uuidd:104
+tcpdump:105
+landscape:107
+fwupd-refresh:989
+usbmux:108
+sshd:109
+user3:1003
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# [7mgrep "/usr/sbin/nologin" /etc/passwd | cut -d: -f1,3 | while IFS=: read user uid; do[27m
+[7m    echo "$uid, $user, $(groups $user | cut -d: -f2)"[27m
+[7mdone | sort -t, -k1 -nr[27m[A[A]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# grep "/usr/sbin/nologin" /etc/passwd | cut -d: -f1,3 | while IFS=: read user uid; do
+    echo "$uid, $user, $(groups $user | cut -d: -f2)"
+done | sort -t, -k1 -nr
+[?2004l65534, nobody,  nogroup
+1003, user3,  user3 users sharedgroup
+998, systemd-network,  systemd-network
+997, systemd-timesync,  systemd-timesync
+992, systemd-resolve,  systemd-resolve
+991, polkitd,  polkitd
+989, fwupd-refresh,  fwupd-refresh
+109, sshd,  nogroup
+108, usbmux,  plugdev
+107, landscape,  landscape
+105, tcpdump,  tcpdump
+104, uuidd,  uuidd
+103, syslog,  syslog adm
+101, messagebus,  messagebus
+42, _apt,  nogroup
+39, irc,  irc
+38, list,  list
+34, backup,  backup
+33, www-data,  www-data
+13, proxy,  proxy
+10, uucp,  uucp
+9, news,  news
+8, mail,  mail
+7, lp,  lp
+6, man,  man
+5, games,  games
+3, sys,  sys
+2, bin,  bin
+1, daemon,  daemon
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# dmesg | grep -i kernel
+[?2004l[    0.000000] [01;31m[KKERNEL[m[K supported cpus:
+[    0.116160] Booting paravirtualized [01;31m[Kkernel[m[K on KVM
+[    0.116438] [01;31m[KKernel[m[K command line: BOOT_IMAGE=/vmlinuz-6.8.0-134-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[    0.238118] Memory: 3925880K/4193760K available (22528K [01;31m[Kkernel[m[K code, 4439K rwdata, 14420K rodata, 4924K init, 4788K bss, 267620K reserved, 0K cma-reserved)
+[    0.425161] DMA: preallocated 512 KiB GFP_[01;31m[KKERNEL[m[K pool for atomic allocations
+[    0.425197] DMA: preallocated 512 KiB GFP_[01;31m[KKERNEL[m[K|GFP_DMA pool for atomic allocations
+[    0.425234] DMA: preallocated 512 KiB GFP_[01;31m[KKERNEL[m[K|GFP_DMA32 pool for atomic allocations
+[    0.949845] Loaded X.509 cert 'Build time autogenerated [01;31m[Kkernel[m[K key: 79aab6b364387381d7a5d225dcfcd094a654ef62'
+[    0.962806] Loaded X.509 cert 'Canonical Ltd. [01;31m[KKernel[m[K Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+[    0.966965] Loaded X.509 cert 'Canonical Ltd. [01;31m[KKernel[m[K Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.143572] Loaded X.509 cert 'Build time autogenerated [01;31m[Kkernel[m[K key: 79aab6b364387381d7a5d225dcfcd094a654ef62'
+[    1.189192] Freeing unused [01;31m[Kkernel[m[K image (initmem) memory: 4924K
+[    1.190878] Write protecting the [01;31m[Kkernel[m[K read-only data: 38912k
+[    1.193184] Freeing unused [01;31m[Kkernel[m[K image (rodata/data gap) memory: 1964K
+[   47.553067] systemd[1]: Listening on systemd-udevd-[01;31m[Kkernel[m[K.socket - udev [01;31m[KKernel[m[K Socket.
+[   47.639795] systemd[1]: Mounting sys-[01;31m[Kkernel[m[K-debug.mount - [01;31m[KKernel[m[K Debug File System...
+[   47.641526] systemd[1]: Mounting sys-[01;31m[Kkernel[m[K-tracing.mount - [01;31m[KKernel[m[K Trace File System...
+[   47.711145] systemd[1]: Starting modprobe@configfs.service - Load [01;31m[KKernel[m[K Module configfs...
+[   47.723144] systemd[1]: Starting modprobe@dm_mod.service - Load [01;31m[KKernel[m[K Module dm_mod...
+[   47.726165] systemd[1]: Starting modprobe@drm.service - Load [01;31m[KKernel[m[K Module drm...
+[   47.730164] systemd[1]: Starting modprobe@efi_pstore.service - Load [01;31m[KKernel[m[K Module efi_pstore...
+[   47.739175] systemd[1]: Starting modprobe@fuse.service - Load [01;31m[KKernel[m[K Module fuse...
+[   47.742163] systemd[1]: Starting modprobe@loop.service - Load [01;31m[KKernel[m[K Module loop...
+[   48.095179] systemd[1]: Starting systemd-modules-load.service - Load [01;31m[KKernel[m[K Modules...
+[   48.111150] systemd[1]: Starting systemd-remount-fs.service - Remount Root and [01;31m[KKernel[m[K File Systems...
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# wc -l /var/log/kern.log 
+[?2004l3987 /var/log/kern.log
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# пкуз[K[K[K[Kgrep[Kp -E "Commandline:|Start-Date:| E[K[KEnd-Date"[K:" /var/log/apt/history.log | paste -d " ; " - - - 
+[?2004lStart-Date: 2025-02-16  20:51:22 Commandline: apt-get install --reinstall apt;End-Date: 2025-02-16  20:51:24
+Start-Date: 2025-02-16  20:51:26 Commandline: apt-get install --reinstall base-files;End-Date: 2025-02-16  20:51:28
+Start-Date: 2025-02-16  20:51:31 Commandline: apt-get install --reinstall base-passwd;End-Date: 2025-02-16  20:51:32
+Start-Date: 2025-02-16  20:51:35 Commandline: apt-get install --reinstall bash;End-Date: 2025-02-16  20:51:37
+Start-Date: 2025-02-16  20:51:39 Commandline: apt-get install --reinstall bsdutils;End-Date: 2025-02-16  20:51:41
+Start-Date: 2025-02-16  20:51:44 Commandline: apt-get install --reinstall coreutils;End-Date: 2025-02-16  20:51:45
+Start-Date: 2025-02-16  20:51:48 Commandline: apt-get install --reinstall dash;End-Date: 2025-02-16  20:51:49
+Start-Date: 2025-02-16  20:51:52 Commandline: apt-get install --reinstall debconf;End-Date: 2025-02-16  20:51:53
+Start-Date: 2025-02-16  20:51:56 Commandline: apt-get install --reinstall debianutils;End-Date: 2025-02-16  20:51:58
+Start-Date: 2025-02-16  20:52:00 Commandline: apt-get install --reinstall diffutils;End-Date: 2025-02-16  20:52:02
+Start-Date: 2025-02-16  20:52:04 Commandline: apt-get install --reinstall dpkg;End-Date: 2025-02-16  20:52:06
+Start-Date: 2025-02-16  20:52:09 Commandline: apt-get install --reinstall e2fsprogs;End-Date: 2025-02-16  20:52:10
+Start-Date: 2025-02-16  20:52:13 Commandline: apt-get install --reinstall findutils;End-Date: 2025-02-16  20:52:14
+Start-Date: 2025-02-16  20:52:17 Commandline: apt-get install --reinstall gcc-14-base:amd64;End-Date: 2025-02-16  20:52:18
+Start-Date: 2025-02-16  20:52:21 Commandline: apt-get install --reinstall gpgv;End-Date: 2025-02-16  20:52:23
+Start-Date: 2025-02-16  20:52:25 Commandline: apt-get install --reinstall grep;End-Date: 2025-02-16  20:52:27
+Start-Date: 2025-02-16  20:52:29 Commandline: apt-get install --reinstall gzip;End-Date: 2025-02-16  20:52:31
+Start-Date: 2025-02-16  20:52:34 Commandline: apt-get install --reinstall hostname;End-Date: 2025-02-16  20:52:35
+Start-Date: 2025-02-16  20:52:38 Commandline: apt-get install --reinstall init-system-helpers;End-Date: 2025-02-16  20:52:39
+Start-Date: 2025-02-16  20:52:42 Commandline: apt-get install --reinstall libacl1:amd64;End-Date: 2025-02-16  20:52:43
+Start-Date: 2025-02-16  20:52:46 Commandline: apt-get install --reinstall libapt-pkg6.0t64:amd64;End-Date: 2025-02-16  20:52:47
+Start-Date: 2025-02-16  20:52:50 Commandline: apt-get install --reinstall libassuan0:amd64;End-Date: 2025-02-16  20:52:51
+Start-Date: 2025-02-16  20:52:54 Commandline: apt-get install --reinstall libattr1:amd64;End-Date: 2025-02-16  20:52:56
+Start-Date: 2025-02-16  20:52:58 Commandline: apt-get install --reinstall libaudit-common;End-Date: 2025-02-16  20:53:00
+Start-Date: 2025-02-16  20:53:02 Commandline: apt-get install --reinstall libaudit1:amd64;End-Date: 2025-02-16  20:53:04
+Start-Date: 2025-02-16  20:53:06 Commandline: apt-get install --reinstall libblkid1:amd64;End-Date: 2025-02-16  20:53:08
+Start-Date: 2025-02-16  20:53:11 Commandline: apt-get install --reinstall libbz2-1.0:amd64;End-Date: 2025-02-16  20:53:12
+Start-Date: 2025-02-16  20:53:15 Commandline: apt-get install --reinstall libc-bin;End-Date: 2025-02-16  20:53:17
+Start-Date: 2025-02-16  20:53:19 Commandline: apt-get install --reinstall libc6:amd64;End-Date: 2025-02-16  20:53:22
+Start-Date: 2025-02-16  20:53:25 Commandline: apt-get install --reinstall libcap-ng0:amd64;End-Date: 2025-02-16  20:53:26
+Start-Date: 2025-02-16  20:53:29 Commandline: apt-get install --reinstall libcap2:amd64;End-Date: 2025-02-16  20:53:30
+Start-Date: 2025-02-16  20:53:33 Commandline: apt-get install --reinstall libcom-err2:amd64;End-Date: 2025-02-16  20:53:34
+Start-Date: 2025-02-16  20:53:37 Commandline: apt-get install --reinstall libcrypt1:amd64;End-Date: 2025-02-16  20:53:38
+Start-Date: 2025-02-16  20:53:41 Commandline: apt-get install --reinstall libdebconfclient0:amd64;End-Date: 2025-02-16  20:53:42
+Start-Date: 2025-02-16  20:53:45 Commandline: apt-get install --reinstall libext2fs2t64:amd64;End-Date: 2025-02-16  20:53:46
+Start-Date: 2025-02-16  20:53:49 Commandline: apt-get install --reinstall libffi8:amd64;End-Date: 2025-02-16  20:53:50
+Start-Date: 2025-02-16  20:53:53 Commandline: apt-get install --reinstall libgcc-s1:amd64;End-Date: 2025-02-16  20:53:54
+Start-Date: 2025-02-16  20:53:57 Commandline: apt-get install --reinstall libgcrypt20:amd64;End-Date: 2025-02-16  20:53:59
+Start-Date: 2025-02-16  20:54:01 Commandline: apt-get install --reinstall libgmp10:amd64;End-Date: 2025-02-16  20:54:03
+Start-Date: 2025-02-16  20:54:05 Commandline: apt-get install --reinstall libgnutls30t64:amd64;End-Date: 2025-02-16  20:54:07
+Start-Date: 2025-02-16  20:54:10 Commandline: apt-get install --reinstall libgpg-error0:amd64;End-Date: 2025-02-16  20:54:11
+Start-Date: 2025-02-16  20:54:14 Commandline: apt-get install --reinstall libhogweed6t64:amd64;End-Date: 2025-02-16  20:54:15
+Start-Date: 2025-02-16  20:54:18 Commandline: apt-get install --reinstall libidn2-0:amd64;End-Date: 2025-02-16  20:54:19
+Start-Date: 2025-02-16  20:54:22 Commandline: apt-get install --reinstall liblz4-1:amd64;End-Date: 2025-02-16  20:54:23
+Start-Date: 2025-02-16  20:54:26 Commandline: apt-get install --reinstall liblzma5:amd64;End-Date: 2025-02-16  20:54:27
+Start-Date: 2025-02-16  20:54:30 Commandline: apt-get install --reinstall libmd0:amd64;End-Date: 2025-02-16  20:54:32
+Start-Date: 2025-02-16  20:54:34 Commandline: apt-get install --reinstall libmount1:amd64;End-Date: 2025-02-16  20:54:36
+Start-Date: 2025-02-16  20:54:38 Commandline: apt-get install --reinstall libncursesw6:amd64;End-Date: 2025-02-16  20:54:39
+Start-Date: 2025-02-16  20:54:42 Commandline: apt-get install --reinstall libnettle8t64:amd64;End-Date: 2025-02-16  20:54:43
+Start-Date: 2025-02-16  20:54:46 Commandline: apt-get install --reinstall libnpth0t64:amd64;End-Date: 2025-02-16  20:54:48
+Start-Date: 2025-02-16  20:54:50 Commandline: apt-get install --reinstall libp11-kit0:amd64;End-Date: 2025-02-16  20:54:52
+Start-Date: 2025-02-16  20:54:54 Commandline: apt-get install --reinstall libpam-modules:amd64;End-Date: 2025-02-16  20:54:56
+Start-Date: 2025-02-16  20:54:58 Commandline: apt-get install --reinstall libpam-modules-bin;End-Date: 2025-02-16  20:55:00
+Start-Date: 2025-02-16  20:55:03 Commandline: apt-get install --reinstall libpam-runtime;End-Date: 2025-02-16  20:55:04
+Start-Date: 2025-02-16  20:55:07 Commandline: apt-get install --reinstall libpam0g:amd64;End-Date: 2025-02-16  20:55:08
+Start-Date: 2025-02-16  20:55:11 Commandline: apt-get install --reinstall libpcre2-8-0:amd64;End-Date: 2025-02-16  20:55:12
+Start-Date: 2025-02-16  20:55:15 Commandline: apt-get install --reinstall libproc2-0:amd64;End-Date: 2025-02-16  20:55:16
+Start-Date: 2025-02-16  20:55:19 Commandline: apt-get install --reinstall libseccomp2:amd64;End-Date: 2025-02-16  20:55:20
+Start-Date: 2025-02-16  20:55:23 Commandline: apt-get install --reinstall libselinux1:amd64;End-Date: 2025-02-16  20:55:24
+Start-Date: 2025-02-16  20:55:27 Commandline: apt-get install --reinstall libsemanage-common;End-Date: 2025-02-16  20:55:28
+Start-Date: 2025-02-16  20:55:31 Commandline: apt-get install --reinstall libsemanage2:amd64;End-Date: 2025-02-16  20:55:32
+Start-Date: 2025-02-16  20:55:35 Commandline: apt-get install --reinstall libsepol2:amd64;End-Date: 2025-02-16  20:55:36
+Start-Date: 2025-02-16  20:55:38 Commandline: apt-get install --reinstall libsmartcols1:amd64;End-Date: 2025-02-16  20:55:40
+Start-Date: 2025-02-16  20:55:42 Commandline: apt-get install --reinstall libss2:amd64;End-Date: 2025-02-16  20:55:44
+Start-Date: 2025-02-16  20:55:46 Commandline: apt-get install --reinstall libssl3t64:amd64;End-Date: 2025-02-16  20:55:48
+Start-Date: 2025-02-16  20:55:51 Commandline: apt-get install --reinstall libstdc++6:amd64;End-Date: 2025-02-16  20:55:52
+Start-Date: 2025-02-16  20:55:55 Commandline: apt-get install --reinstall libsystemd0:amd64;End-Date: 2025-02-16  20:55:56
+Start-Date: 2025-02-16  20:55:59 Commandline: apt-get install --reinstall libtasn1-6:amd64;End-Date: 2025-02-16  20:56:00
+Start-Date: 2025-02-16  20:56:03 Commandline: apt-get install --reinstall libtinfo6:amd64;End-Date: 2025-02-16  20:56:04
+Start-Date: 2025-02-16  20:56:07 Commandline: apt-get install --reinstall libudev1:amd64;End-Date: 2025-02-16  20:56:08
+Start-Date: 2025-02-16  20:56:11 Commandline: apt-get install --reinstall libunistring5:amd64;End-Date: 2025-02-16  20:56:13
+Start-Date: 2025-02-16  20:56:15 Commandline: apt-get install --reinstall libuuid1:amd64;End-Date: 2025-02-16  20:56:17
+Start-Date: 2025-02-16  20:56:19 Commandline: apt-get install --reinstall libxxhash0:amd64;End-Date: 2025-02-16  20:56:21
+Start-Date: 2025-02-16  20:56:23 Commandline: apt-get install --reinstall libzstd1:amd64;End-Date: 2025-02-16  20:56:25
+Start-Date: 2025-02-16  20:56:28 Commandline: apt-get install --reinstall login;End-Date: 2025-02-16  20:56:29
+Start-Date: 2025-02-16  20:56:32 Commandline: apt-get install --reinstall logsave;End-Date: 2025-02-16  20:56:33
+Start-Date: 2025-02-16  20:56:36 Commandline: apt-get install --reinstall mawk;End-Date: 2025-02-16  20:56:37
+Start-Date: 2025-02-16  20:56:39 Commandline: apt-get install --reinstall mount;End-Date: 2025-02-16  20:56:41
+Start-Date: 2025-02-16  20:56:43 Commandline: apt-get install --reinstall ncurses-base;End-Date: 2025-02-16  20:56:45
+Start-Date: 2025-02-16  20:56:47 Commandline: apt-get install --reinstall ncurses-bin;End-Date: 2025-02-16  20:56:49
+Start-Date: 2025-02-16  20:56:52 Commandline: apt-get install --reinstall passwd;End-Date: 2025-02-16  20:56:53
+Start-Date: 2025-02-16  20:56:55 Commandline: apt-get install --reinstall perl-base;End-Date: 2025-02-16  20:56:57
+Start-Date: 2025-02-16  20:57:00 Commandline: apt-get install --reinstall procps;End-Date: 2025-02-16  20:57:01
+Start-Date: 2025-02-16  20:57:04 Commandline: apt-get install --reinstall sed;End-Date: 2025-02-16  20:57:05
+Start-Date: 2025-02-16  20:57:08 Commandline: apt-get install --reinstall sensible-utils;End-Date: 2025-02-16  20:57:09
+Start-Date: 2025-02-16  20:57:12 Commandline: apt-get install --reinstall sysvinit-utils;End-Date: 2025-02-16  20:57:13
+Start-Date: 2025-02-16  20:57:16 Commandline: apt-get install --reinstall tar;End-Date: 2025-02-16  20:57:17
+Start-Date: 2025-02-16  20:57:20 Commandline: apt-get install --reinstall ubuntu-keyring;End-Date: 2025-02-16  20:57:21
+Start-Date: 2025-02-16  20:57:24 Commandline: apt-get install --reinstall util-linux;End-Date: 2025-02-16  20:57:26
+Start-Date: 2025-02-16  20:57:28 Commandline: apt-get install --reinstall zlib1g:amd64;End-Date: 2025-02-16  20:57:30
+Start-Date: 2025-02-16  20:57:34 Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes --force-yes upgrade;End-Date: 2025-02-16  20:57:38
+Start-Date: 2025-02-16  20:57:39 Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes --force-yes dist-upgrade;End-Date: 2025-02-16  20:57:39
+Start-Date: 2025-02-16  20:57:42 Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes install adduser apparmor apport apport-core-dump-handler apt base-passwd bcache-tools btrfs-progs busybox-initramfs ca-certificates cloud-guest-utils cloud-init coreutils cpio cryptsetup cryptsetup-bin curl dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common dbus-user-session debconf dhcpcd-base distro-info-data dmeventd dmsetup dpkg dracut-install e2fsprogs ethtool fdisk fuse3 gawk gcc-14-base gettext-base gir1.2-girepository-2.0 gir1.2-glib-2.0 gpgv init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core iproute2 klibc-utils kmod kpartx libacl1 libaio1t64 libapparmor1 libapt-pkg6.0t64 libargon2-1 libassuan0 libattr1 libaudit-common libaudit1 libblkid1 libbpf1 libbrotli1 libbsd0 libbz2-1.0 libc6 libcap-ng0 libcap2 libcap2-bin libcbor0.10 libcom-err2 libcrypt1 libcryptsetup12 libcurl4t64 libdb5.3t64 libdbus-1-3 libdebconfclient0 libdevmapper-event1.02.1 libdevmapper1.02.1 libdrm-common libdrm2 libedit2 libelf1t64 libexpat1 libext2fs2t64 libfdisk1 libffi8 libfido2-1 libfuse3-3 libgcc-s1 libgcrypt20 libgdbm-compat4t64 libgdbm6t64 libgirepository-1.0-1 libglib2.0-0t64 libgmp10 libgnutls30t64 libgpg-error0 libgssapi-krb5-2 libhogweed6t64 libicu74 libidn2-0 libinih1 libintl-perl libisns0t64 libjson-c5 libk5crypto3 libkeyutils1 libklibc libkmod2 libkrb5-3 libkrb5support0 libldap2 liblvm2cmd2.03 liblz4-1 liblzma5 liblzo2-2 libmd0 libmnl0 libmodule-find-perl libmodule-scandeps-perl libmount1 libmpfr6 libncursesw6 libnetplan1 libnettle8t64 libnghttp2-14 libnpth0t64 libopeniscsiusr libp11-kit0 libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libpci3 libpcre2-8-0 libperl5.38t64 libpopt0 libproc-processtable-perl libproc2-0 libpsl5t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64 libreiserfscore0t64 librtmp1 libsasl2-2 libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2 libsepol2 libsgutils2-1.46-2 libsigsegv2 libsmartcols1 libsort-naturally-perl libsqlite3-0 libss2 libssh-4 libssl3t64 libstdc++6 libsystemd-shared libsystemd0 libtasn1-6 libterm-readkey-perl libtinfo6 libtirpc-common libtirpc3t64 libudev1 libunistring5 liburcu8t64 libusb-1.0-0 libuuid1 libxtables12 libxxhash0 libyaml-0-2 libzstd1 linux-base logsave lsb-base lsb-release lvm2 mdadm media-types mount multipath-tools needrestart netbase netplan-generator netplan.io open-iscsi openssh-client openssl passwd pci.ids pciutils perl perl-base perl-modules-5.38 pollinate procps python-apt-common python3 python3-apport python3-apt python3-attr python3-blinker python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-configobj python3-cryptography python3-dbus python3-debconf python3-distro python3-distro-info python3-distupgrade python3-gi python3-httplib2 python3-idna python3-jinja2 python3-json-pointer python3-jsonpatch python3-jsonschema python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-markupsafe python3-minimal python3-netplan python3-oauthlib python3-pkg-resources python3-problem-report python3-pyparsing python3-pyrsistent python3-requests python3-serial python3-six python3-update-manager python3-urllib3 python3-wadllib python3-xkit python3-yaml python3.12 python3.12-minimal readline-common sed sensible-utils sg3-utils sg3-utils-udev snapd squashfs-tools sudo systemd systemd-dev systemd-resolved systemd-sysv sysvinit-utils tar tzdata ubuntu-drivers-common ubuntu-keyring ubuntu-release-upgrader-core ubuntu-server-minimal ucf udev unattended-upgrades unminimize usbutils xfsprogs xxd xz-utils zlib1g lxd-installer;End-Date: 2025-02-16  20:58:20
+Start-Date: 2025-02-16  20:58:40 Commandline: apt-get install --reinstall -y gdisk zstd unattended-upgrades xfsprogs multipath-tools kpartx cloud-init squashfs-tools sg3-utils pollinate packagekit-tools polkitd xml-core needrestart mdadm lvm2 libterm-readkey-perl libsort-naturally-perl libproc-processtable-perl:amd64 libmodule-scandeps-perl libmodule-find-perl libldap-common libintl-xs-perl libintl-perl libglib2.0-bin gpg-wks-client gnupg keyboxd gpgsm gpg-agent pinentry-curses gpg gnupg-utils finalrd fdisk eatmydata dmeventd dirmngr gpgconf curl initramfs-tools linux-base initramfs-tools-core cryptsetup cryptsetup-bin btrfs-progs bcache-tools appstream libsasl2-2:amd64 xz-utils xauth ubuntu-release-upgrader-core plymouth openssh-client libx11-data libedit2:amd64 groff-base gettext-base fuse3 cpio apparmor xxd xdg-user-dirs ucf systemd-timesyncd systemd-resolved sudo shared-mime-info python3-pygments networkd-dispatcher netplan.io cloud-guest-utils thin-provisioning-tools software-properties-common snapd iproute2 libcap2-bin libtirpc-common libpam-systemd:amd64 coreutils ncurses-bin mawk libsemanage-common bash base-passwd tar sysvinit-utils sensible-utils sed apt init-system-helpers hostname gzip grep gpgv findutils diffutils debconf debianutils dash adduser kmod usbutils pciutils sgml-base perl libperl5.38t64:amd64 dmsetup dhcpcd-base open-iscsi udev gawk python3-chardet lsb-release dbus-daemon dbus-bin systemd-sysv systemd python3 python3.12 readline-common ethtool netplan-generator libpam-cap:amd64 libnss-systemd:amd64 console-setup keyboard-configuration xkb-data liblocale-gettext-perl kbd ca-certificates openssl libpam-modules:amd64 python3-minimal python3.12-minimal procps passwd libpam-modules-bin logsave libpam-runtime libaudit-common mount e2fsprogs util-linux perl-base bsdutils apport libc-bin base-files login dpkg;End-Date: 2025-02-16  20:59:23
+Start-Date: 2025-02-16  20:59:26 Commandline: apt-get install --reinstall -y cryptsetup-initramfs dbus dbus-session-bus-common dbus-system-bus-common distro-info-data dracut-install gcc-14-base:amd64 gnupg-l10n iso-codes libapt-pkg6.0t64:amd64 libc6:amd64 libcbor0.10:amd64 libcryptsetup12:amd64 libdb5.3t64:amd64 libdbus-1-3:amd64 libexpat1:amd64 libfuse3-3:amd64 libgcrypt20:amd64 libglib2.0-0t64:amd64 libgmp10:amd64 libgnutls30t64:amd64 libgpg-error0:amd64 libidn2-0:amd64 libjson-c5:amd64 libklibc:amd64 libkrb5-3:amd64 libksba8:amd64 libldap2:amd64 liblzma5:amd64 liblzo2-2:amd64 libmpfr6:amd64 libnettle8t64:amd64 libnghttp2-14:amd64 libopeniscsiusr libp11-kit0:amd64 libpam0g:amd64 libpcre2-8-0:amd64 libpng16-16t64:amd64 libpolkit-gobject-1-0:amd64 libpopt0:amd64 libproc2-0:amd64 libpython3-stdlib:amd64 libpython3.12-minimal:amd64 libreadline8t64:amd64 libsigsegv2:amd64 libsqlite3-0:amd64 libssh-4:amd64 libstemmer0d:amd64 libsystemd-shared:amd64 libsystemd0:amd64 libtasn1-6:amd64 libtirpc3t64:amd64 libudev1:amd64 libusb-1.0-0:amd64 libxml2:amd64 libxtables12:amd64 lsb-base ncurses-base packagekit perl-modules-5.38 publicsuffix python3-babel python3-certifi python3-colorama python3-dbus python3-gi python3-httplib2 python3-json-pointer python3-jsonpatch python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-markdown-it python3-oauthlib python3-pkg-resources python3-requests python3-rich python3-serial python3-software-properties python3-tz python3-wadllib python3-yaml systemd-dev tzdata ubuntu-drivers-common;End-Date: 2025-02-16  20:59:43
+Start-Date: 2025-02-16  20:59:50 Commandline: apt-get install -y ubuntu-minimal ubuntu-standard;End-Date: 2025-02-16  21:00:01
+Start-Date: 2025-02-16  21:00:04 Commandline: apt-get -y --fix-policy install;End-Date: 2025-02-16  21:00:04
+Start-Date: 2025-02-16  21:00:10 Commandline: apt-get --yes -oDebug::pkgDepCache::AutoInstall=yes install adduser apparmor apport apport-core-dump-handler apport-symptoms appstream apt apt-utils base-files base-passwd bash bash-completion bc bcache-tools bind9-dnsutils bind9-host bind9-libs bolt bsdextrautils bsdutils btrfs-progs busybox-initramfs busybox-static byobu ca-certificates cloud-guest-utils cloud-initramfs-copymods cloud-initramfs-dyn-netconf command-not-found console-setup console-setup-linux coreutils cpio cron cron-daemon-common cryptsetup cryptsetup-bin cryptsetup-initramfs curl dash dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common dbus-user-session debconf debconf-i18n debianutils dhcpcd-base diffutils dirmngr distro-info distro-info-data dmeventd dmidecode dmsetup dosfstools dpkg dracut-install e2fsprogs ed eject ethtool fdisk file finalrd findutils fonts-ubuntu-console friendly-recovery ftp fuse3 fwupd fwupd-signed gawk gcc-14-base gdisk gettext-base gir1.2-girepository-2.0 gir1.2-glib-2.0 gir1.2-packagekitglib-1.0 git git-man gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm gpgv grep groff-base gzip hdparm hostname htop ibverbs-providers inetutils-telnet info init init-system-helpers initramfs-tools initramfs-tools-bin initramfs-tools-core install-info iproute2 iptables iputils-ping iputils-tracepath iso-codes jq kbd keyboard-configuration keyboxd klibc-utils kmod kpartx krb5-locales landscape-common less libacl1 libaio1t64 libapparmor1 libappstream5 libapt-pkg6.0t64 libarchive13t64 libargon2-1 libassuan0 libatasmart4 libatm1t64 libattr1 libaudit-common libaudit1 libblkid1 libblockdev-crypto3 libblockdev-fs3 libblockdev-loop3 libblockdev-mdraid3 libblockdev-nvme3 libblockdev-part3 libblockdev-swap3 libblockdev-utils3 libblockdev3 libbpf1 libbrotli1 libbsd0 libbytesize-common libbytesize1 libbz2-1.0 libc-bin libc6 libcap-ng0 libcap2 libcap2-bin libcbor0.10 libcom-err2 libcrypt1 libcryptsetup12 libcurl3t64-gnutls libcurl4t64 libdb5.3t64 libdbus-1-3 libdebconfclient0 libdevmapper-event1.02.1 libdevmapper1.02.1 libdrm-common libdrm2 libduktape207 libdw1t64 libedit2 libelf1t64 liberror-perl libestr0 libevdev2 libevent-core-2.1-7t64 libexpat1 libext2fs2t64 libfastjson4 libfdisk1 libffi8 libfido2-1 libflashrom1 libfribidi0 libftdi1-2 libfuse3-3 libfwupd2 libgcc-s1 libgcrypt20 libgdbm-compat4t64 libgdbm6t64 libgirepository-1.0-1 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libgmp10 libgnutls30t64 libgpg-error0 libgpgme11t64 libgpm2 libgssapi-krb5-2 libgstreamer1.0-0 libgudev-1.0-0 libgusb2 libhogweed6t64 libibverbs1 libicu74 libidn2-0 libinih1 libintl-perl libintl-xs-perl libip4tc2 libip6tc2 libisns0t64 libjansson4 libjcat1 libjq1 libjson-c5 libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3 libkeyutils1 libklibc libkmod2 libkrb5-3 libkrb5support0 libksba8 libldap-common libldap2 liblmdb0 liblocale-gettext-perl liblvm2cmd2.03 liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1t64 libmaxminddb0 libmbim-glib4 libmbim-proxy libmbim-utils libmd0 libmm-glib0 libmnl0 libmodule-find-perl libmodule-scandeps-perl libmount1 libmpfr6 libmspack0t64 libncurses6 libncursesw6 libnetfilter-conntrack3 libnetplan1 libnettle8t64 libnewt0.52 libnfnetlink0 libnftables1 libnftnl11 libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libnpth0t64 libnspr4 libnss-systemd libnss3 libntfs-3g89t64 libnuma1 libnvme1t64 libonig5 libopeniscsiusr libp11-kit0 libpackagekit-glib2-18 libpam-cap libpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g libparted2t64 libpcap0.8t64 libpci3 libpcre2-8-0 libperl5.38t64 libpipeline1 libplymouth5 libpng16-16t64 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpopt0 libproc-processtable-perl libproc2-0 libprotobuf-c1 libpsl5t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libpython3.12t64 libqmi-glib5 libqmi-proxy libqmi-utils libqrtr-glib0 libreadline8t64 libreiserfscore0t64 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libseccomp2 libselinux1 libsemanage-common libsemanage2 libsensors-config libsensors5 libsepol2 libsgutils2-1.46-2 libsigsegv2 libslang2 libsmartcols1 libsodium23 libsort-naturally-perl libsqlite3-0 libss2 libssh-4 libssl3t64 libstdc++6 libstemmer0d libsystemd-shared libsystemd0 libtasn1-6 libtcl8.6 libterm-readkey-perl libtext-charwidth-perl libtext-iconv-perl libtext-wrapi18n-perl libtinfo6 libtirpc-common libtirpc3t64 libtraceevent1 libtraceevent1-plugin libtracefs1 libtss2-esys-3.0.2-0t64 libtss2-mu-4.0.1-0t64 libtss2-sys1t64 libtss2-tcti-cmd0t64 libtss2-tcti-device0t64 libtss2-tcti-mssim0t64 libtss2-tcti-swtpm0t64 libuchardet0 libudev1 libudisks2-0 libunistring5 libunwind8 liburcu8t64 libusb-1.0-0 libutempter0 libuuid1 libuv1t64 libvolume-key1 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxkbcommon0 libxml2 libxmlb2 libxmlsec1t64 libxmlsec1t64-openssl libxmuu1 libxslt1.1 libxtables12 libxxhash0 libyaml-0-2 libzstd1 linux-base locales login logrotate logsave lsb-release lshw lsof lvm2 lxd-agent-loader lxd-installer man-db manpages mawk mdadm media-types modemmanager motd-news-config mount mtr-tiny multipath-tools nano ncurses-base ncurses-bin needrestart netbase netcat-openbsd netplan-generator netplan.io networkd-dispatcher nftables ntfs-3g numactl open-iscsi open-vm-tools openssh-client openssl overlayroot packagekit packagekit-tools parted passwd pastebinit patch pci.ids pciutils perl perl-base perl-modules-5.38 pinentry-curses plymouth plymouth-theme-ubuntu-text polkitd pollinate powermgmt-base procps psmisc publicsuffix python-apt-common python3 python3-apport python3-apt python3-attr python3-automat python3-bcrypt python3-blinker python3-boto3 python3-botocore python3-certifi python3-cffi-backend python3-chardet python3-click python3-colorama python3-commandnotfound python3-configobj python3-constantly python3-cryptography python3-dateutil python3-dbus python3-debconf python3-debian python3-distro python3-distro-info python3-distupgrade python3-gdbm python3-gi python3-hamcrest python3-httplib2 python3-hyperlink python3-idna python3-incremental python3-jmespath python3-jwt python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-magic python3-markdown-it python3-mdurl python3-minimal python3-netifaces python3-netplan python3-newt python3-oauthlib python3-openssl python3-packaging python3-pexpect python3-pkg-resources python3-problem-report python3-ptyprocess python3-pyasn1 python3-pyasn1-modules python3-pygments python3-pyparsing python3-requests python3-rich python3-s3transfer python3-service-identity python3-setuptools python3-six python3-software-properties python3-systemd python3-twisted python3-update-manager python3-urllib3 python3-wadllib python3-yaml python3-zope.interface python3.12 python3.12-minimal readline-common rsync rsyslog run-one sbsigntool screen secureboot-db sed sensible-utils sg3-utils sg3-utils-udev sgml-base shared-mime-info snapd software-properties-common sosreport squashfs-tools strace sudo sysstat systemd systemd-dev systemd-hwe-hwdb systemd-resolved systemd-sysv systemd-timesyncd sysvinit-utils tar tcl tcl8.6 tcpdump telnet thin-provisioning-tools time tmux tnftp tpm-udev trace-cmd tzdata ubuntu-keyring ubuntu-minimal ubuntu-pro-client ubuntu-pro-client-l10n ubuntu-release-upgrader-core ubuntu-server ubuntu-standard ucf udev udisks2 ufw unattended-upgrades update-manager-core update-notifier-common usb-modeswitch usb-modeswitch-data usb.ids usbutils util-linux uuid-runtime vim vim-common vim-runtime vim-tiny wget whiptail xauth xdg-user-dirs xfsprogs xkb-data xml-core xxd xz-utils zerofree zlib1g zstd cloud-init;End-Date: 2025-02-16  21:00:28
+Start-Date: 2025-03-12  18:07:37 Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install grub-pc;End-Date: 2025-03-12  18:08:03
+Start-Date: 2025-03-12  18:08:37 Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install linux-generic;End-Date: 2025-03-12  18:11:58
+Start-Date: 2025-03-12  18:12:45 Commandline: apt-get --quiet --assume-yes --option=Dpkg::options::=--force-unsafe-io --option=Dpkg::Options::=--force-confold install openssh-server;End-Date: 2025-03-12  18:13:11
+Start-Date: 2025-03-12  18:13:21 Commandline: /usr/bin/unattended-upgrades -v;End-Date: 2025-03-12  18:14:11
+Start-Date: 2025-03-12  18:19:08 Commandline: apt dist-upgrade;End-Date: 2025-03-12  18:21:04
+Start-Date: 2025-03-12  18:21:23 Commandline: apt install vim qemu-guest-agent;End-Date: 2025-03-12  18:21:31
+Start-Date: 2026-07-09  06:52:06 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  06:55:52
+Start-Date: 2026-07-09  06:56:25 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  06:58:21
+Start-Date: 2026-07-09  06:58:24 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  07:03:40
+Start-Date: 2026-07-09  07:03:46 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  07:12:29
+Start-Date: 2026-07-09  07:12:32 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  07:24:42
+Start-Date: 2026-07-09  07:25:18 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  07:53:02
+Start-Date: 2026-07-09  07:53:08 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  07:53:53
+Start-Date: 2026-07-09  07:53:59 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  08:08:09
+Start-Date: 2026-07-09  08:08:25 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  08:11:53
+Start-Date: 2026-07-09  08:11:58 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  08:22:47
+Start-Date: 2026-07-09  08:22:52 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  08:25:25
+Start-Date: 2026-07-09  08:25:33 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  08:27:57
+Start-Date: 2026-07-09  08:28:03 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  09:52:06
+Start-Date: 2026-07-09  09:52:13 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  09:54:01
+Start-Date: 2026-07-09  09:54:13 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  09:56:32
+Start-Date: 2026-07-09  09:58:46 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:13:12
+Start-Date: 2026-07-09  10:13:18 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:14:51
+Start-Date: 2026-07-09  10:15:02 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:17:40
+Start-Date: 2026-07-09  10:17:52 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:26:55
+Start-Date: 2026-07-09  10:27:01 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:30:48
+Start-Date: 2026-07-09  10:30:55 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:37:10
+Start-Date: 2026-07-09  10:37:21 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:40:00
+Start-Date: 2026-07-09  10:40:26 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:45:27
+Start-Date: 2026-07-09  10:45:51 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:49:33
+Start-Date: 2026-07-09  10:49:49 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:53:34
+Start-Date: 2026-07-09  10:53:40 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  10:57:39
+Start-Date: 2026-07-09  10:58:07 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:06:08
+Start-Date: 2026-07-09  11:06:14 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:08:41
+Start-Date: 2026-07-09  11:08:50 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:10:05
+Start-Date: 2026-07-09  11:10:19 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:13:45
+Start-Date: 2026-07-09  11:13:51 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:15:02
+Start-Date: 2026-07-09  11:15:09 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:22:39
+Start-Date: 2026-07-09  11:22:45 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:27:56
+Start-Date: 2026-07-09  11:28:12 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:33:16
+Start-Date: 2026-07-09  11:33:32 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:37:56
+Start-Date: 2026-07-09  11:38:09 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:39:50
+Start-Date: 2026-07-09  11:39:56 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:41:06
+Start-Date: 2026-07-09  11:41:24 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:47:50
+Start-Date: 2026-07-09  11:48:01 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:51:37
+Start-Date: 2026-07-09  11:51:43 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:54:10
+Start-Date: 2026-07-09  11:54:16 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  11:58:54
+Start-Date: 2026-07-09  11:59:05 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:01:47
+Start-Date: 2026-07-09  12:01:55 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:02:20
+Start-Date: 2026-07-09  12:02:26 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:05:32
+Start-Date: 2026-07-09  12:05:38 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:10:43
+Start-Date: 2026-07-09  12:10:51 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:15:13
+Start-Date: 2026-07-09  12:15:18 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:16:28
+Start-Date: 2026-07-09  12:16:58 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:20:17
+Start-Date: 2026-07-09  12:20:23 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:22:55
+Start-Date: 2026-07-09  12:22:58 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:24:20
+Start-Date: 2026-07-09  12:24:36 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:32:26
+Start-Date: 2026-07-09  12:32:34 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:33:16
+Start-Date: 2026-07-09  12:33:31 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:35:10
+Start-Date: 2026-07-09  12:35:18 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:36:33
+Start-Date: 2026-07-09  12:36:43 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:39:56
+Start-Date: 2026-07-09  12:40:02 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:41:08
+Start-Date: 2026-07-09  12:41:15 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:43:03
+Start-Date: 2026-07-09  12:43:13 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:44:49
+Start-Date: 2026-07-09  12:44:53 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:47:30
+Start-Date: 2026-07-09  12:47:40 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:48:37
+Start-Date: 2026-07-09  12:48:42 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:50:55
+Start-Date: 2026-07-09  12:51:03 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:53:26
+Start-Date: 2026-07-09  12:53:30 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:54:19
+Start-Date: 2026-07-09  12:54:26 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:57:50
+Start-Date: 2026-07-09  12:58:05 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  12:58:33
+Start-Date: 2026-07-09  12:58:41 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:01:14
+Start-Date: 2026-07-09  13:01:22 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:02:41
+Start-Date: 2026-07-09  13:02:49 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:04:15
+Start-Date: 2026-07-09  13:04:23 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:07:12
+Start-Date: 2026-07-09  13:07:16 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:07:53
+Start-Date: 2026-07-09  13:08:06 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:10:17
+Start-Date: 2026-07-09  13:10:23 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:10:53
+Start-Date: 2026-07-09  13:10:57 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:12:21
+Start-Date: 2026-07-09  13:12:25 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:13:02
+Start-Date: 2026-07-09  13:13:05 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:14:22
+Start-Date: 2026-07-09  13:14:25 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:17:31
+Start-Date: 2026-07-09  13:17:38 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:18:28
+Start-Date: 2026-07-09  13:18:31 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:19:39
+Start-Date: 2026-07-09  13:19:43 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:20:24
+Start-Date: 2026-07-09  13:20:31 Commandline: /usr/bin/unattended-upgrade;End-Date: 2026-07-09  13:21:08
+Start-Date: 2026-07-09  14:21:20 Commandline: apt install shc -y;End-Date: 2026-07-09  14:21:23
+Start-Date: 2026-07-09  14:22:17 Commandline: apt install gcc -y;End-Date: 2026-07-09  14:22:56
+Start-Date: 2026-07-09  14:36:08 Commandline: apt install bzip2 p7zip-full -y;End-Date: 2026-07-09  14:36:13
+[?2004h]0;root@eltex-practice2-v17: ~root@eltex-practice2-v17:~# exit
+[?2004llogout
+Connection to 172.16.9.191 closed.
+[?2004h]0;eltex-v17@eltex-2026-summer: ~eltex-v17@eltex-2026-summer:~$ exit
+[?2004lexit
+
+Script done on 2026-07-09 22:28:46+07:00 [COMMAND_EXIT_CODE="0"]
