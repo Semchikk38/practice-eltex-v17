@@ -1,0 +1,314 @@
+файлы lab2_S_E и lab2_S_E-1
+
+
+SW1:
+vIOS-L2-01>enable
+vIOS-L2-01#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#hostname Layer2Switch-1
+Layer2Switch-1(config)#spanning-tree vlan
+*Aug 13 15:36:39.279: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios_l2-adventerprisek9-m' passed code signing verification
+Layer2Switch-1(config)#spanning-tree vlan 1 priority 4096
+Layer2Switch-1(config)#exit
+Layer2Switch-1#w
+*Aug 13 15:36:57.810: %SYS-5-CONFIG_I: Configured from console by console
+Layer2Switch-1#write memory
+Building configuration...
+Compressed configuration from 5281 bytes to 2030 bytes[OK]
+Layer2Switch-1#
+*Aug 13 15:37:08.195: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Aug 13 15:37:08.991: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Layer2Switch-1#
+
+
+SW2:
+vIOS-L2-01>enable
+vIOS-L2-01#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#hostname Layer2Switch-2
+Layer2Switch-2(config)#spanning-tree vlan 1 priority 8192
+Building configuration...
+*Aug 13 15:41:12.327: %SYS-5-CONFIG_I: Configured from console by consoleCompressed configuration from 5281 bytes to 2031 bytes[OK]
+Layer2Switch-2(config)#exit
+Layer2Switch-2#write memory
+*Aug 13 15:41:18.671: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Aug 13 15:41:19.494: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+SW3:
+vIOS-L2-01>enable
+vIOS-L2-01#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#hostname Layer2Switch-3
+Layer2Switch-3(config)#spanning-tree vlan 1
+Layer2Switch-3(config)#exit
+*Aug 13 15:44:23.493: %SYS-5-CONFIG_I: Configured from console by console
+Layer2Switch-3#write memory
+Building configuration...
+Compressed configuration from 5046 bytes to 1924 bytes[OK]
+*Aug 13 15:44:35.353: %GRUB-5-CONFIG_WRITING: GRUB configuration is being update                                     d on disk. Please wait...
+*Aug 13 15:44:36.150: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to                                      disk successfully.
+Layer2Switch-3#
+
+
+SW4:
+vIOS-L2-01>enable
+vIOS-L2-01#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#hostname Layer2Switch-4
+Layer2Switch-4(config)#spanning-tree vlan 1
+Layer2Switch-4(config)#exit
+Layer2Switch-4#w
+*Aug 13 15:47:10.667: %SYS-5-CONFIG_I: Configured from console by console
+Layer2Switch-4#write memory
+Building configuration...
+Compressed configuration from 5046 bytes to 1919 bytes[OK]
+Layer2Switch-4#
+*Aug 13 15:47:21.577: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Aug 13 15:47:22.373: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+SW5:
+vIOS-L2-01>enable
+vIOS-L2-01#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+vIOS-L2-01(config)#hostname Layer2Switch-5
+Layer2Switch-5(config)#spanning-tree vlan 1
+Layer2Switch-5(config)#exit
+Layer2Switch-5#
+*Aug 13 15:48:18.095: %SYS-5-CONFIG_I: Configured from console by console
+Layer2Switch-5#write memory
+Building configuration...
+Compressed configuration from 5046 bytes to 1926 bytes[OK]
+*Aug 13 15:48:30.164: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Aug 13 15:48:30.959: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Layer2Switch-5#
+
+
+
+ping 192.168.1.2
+
+84 bytes from 192.168.1.2 icmp_seq=1 ttl=64 time=6.753 ms
+84 bytes from 192.168.1.2 icmp_seq=2 ttl=64 time=7.019 ms
+84 bytes from 192.168.1.2 icmp_seq=3 ttl=64 time=0.996 ms
+84 bytes from 192.168.1.2 icmp_seq=4 ttl=64 time=6.278 ms
+84 bytes from 192.168.1.2 icmp_seq=5 ttl=64 time=7.397 ms
+
+PC1> ping 192.168.1.3
+
+84 bytes from 192.168.1.3 icmp_seq=1 ttl=64 time=4.425 ms
+84 bytes from 192.168.1.3 icmp_seq=2 ttl=64 time=8.108 ms
+84 bytes from 192.168.1.3 icmp_seq=3 ttl=64 time=6.601 ms
+84 bytes from 192.168.1.3 icmp_seq=4 ttl=64 time=8.170 ms
+84 bytes from 192.168.1.3 icmp_seq=5 ttl=64 time=7.542 ms
+
+PC1> ping 192.168.1.4
+
+84 bytes from 192.168.1.4 icmp_seq=1 ttl=64 time=15.606 ms
+84 bytes from 192.168.1.4 icmp_seq=2 ttl=64 time=10.272 ms
+84 bytes from 192.168.1.4 icmp_seq=3 ttl=64 time=5.053 ms
+84 bytes from 192.168.1.4 icmp_seq=4 ttl=64 time=9.669 ms
+84 bytes from 192.168.1.4 icmp_seq=5 ttl=64 time=7.836 ms
+
+PC1> ping 192.168.1.5
+
+84 bytes from 192.168.1.5 icmp_seq=1 ttl=64 time=18.151 ms
+84 bytes from 192.168.1.5 icmp_seq=2 ttl=64 time=5.405 ms
+84 bytes from 192.168.1.5 icmp_seq=3 ttl=64 time=7.781 ms
+84 bytes from 192.168.1.5 icmp_seq=4 ttl=64 time=6.355 ms
+84 bytes from 192.168.1.5 icmp_seq=5 ttl=64 time=16.871 ms
+
+PC1> ping 192.168.1.6
+
+84 bytes from 192.168.1.6 icmp_seq=1 ttl=64 time=9.552 ms
+84 bytes from 192.168.1.6 icmp_seq=2 ttl=64 time=6.480 ms
+84 bytes from 192.168.1.6 icmp_seq=3 ttl=64 time=14.855 ms
+84 bytes from 192.168.1.6 icmp_seq=4 ttl=64 time=6.448 ms
+84 bytes from 192.168.1.6 icmp_seq=5 ttl=64 time=7.096 ms
+
+PC1>
+
+
+
+
+
+ping 192.168.1.3
+
+84 bytes from 192.168.1.3 icmp_seq=1 ttl=64 time=9.430 ms
+84 bytes from 192.168.1.3 icmp_seq=2 ttl=64 time=2.176 ms
+84 bytes from 192.168.1.3 icmp_seq=3 ttl=64 time=4.399 ms
+84 bytes from 192.168.1.3 icmp_seq=4 ttl=64 time=7.402 ms
+84 bytes from 192.168.1.3 icmp_seq=5 ttl=64 time=14.841 ms
+
+PC2> ping 192.168.1.4
+
+84 bytes from 192.168.1.4 icmp_seq=1 ttl=64 time=11.370 ms
+84 bytes from 192.168.1.4 icmp_seq=2 ttl=64 time=5.249 ms
+84 bytes from 192.168.1.4 icmp_seq=3 ttl=64 time=4.431 ms
+84 bytes from 192.168.1.4 icmp_seq=4 ttl=64 time=3.227 ms
+84 bytes from 192.168.1.4 icmp_seq=5 ttl=64 time=7.560 ms
+
+PC2> ping 192.168.1.5
+
+84 bytes from 192.168.1.5 icmp_seq=1 ttl=64 time=5.784 ms
+84 bytes from 192.168.1.5 icmp_seq=2 ttl=64 time=10.774 ms
+84 bytes from 192.168.1.5 icmp_seq=3 ttl=64 time=8.273 ms
+84 bytes from 192.168.1.5 icmp_seq=4 ttl=64 time=6.618 ms
+84 bytes from 192.168.1.5 icmp_seq=5 ttl=64 time=4.798 ms
+
+PC2> ping 192.168.1.6
+
+84 bytes from 192.168.1.6 icmp_seq=1 ttl=64 time=16.423 ms
+84 bytes from 192.168.1.6 icmp_seq=2 ttl=64 time=15.350 ms
+84 bytes from 192.168.1.6 icmp_seq=3 ttl=64 time=13.730 ms
+84 bytes from 192.168.1.6 icmp_seq=4 ttl=64 time=2.806 ms
+84 bytes from 192.168.1.6 icmp_seq=5 ttl=64 time=6.158 ms
+
+PC2>
+
+
+
+
+
+
+PC3> ping 192.168.1.4
+
+84 bytes from 192.168.1.4 icmp_seq=1 ttl=64 time=1.272 ms
+84 bytes from 192.168.1.4 icmp_seq=2 ttl=64 time=0.951 ms
+84 bytes from 192.168.1.4 icmp_seq=3 ttl=64 time=1.010 ms
+84 bytes from 192.168.1.4 icmp_seq=4 ttl=64 time=4.822 ms
+84 bytes from 192.168.1.4 icmp_seq=5 ttl=64 time=6.947 ms
+
+PC3> ping 192.168.1.5
+
+84 bytes from 192.168.1.5 icmp_seq=1 ttl=64 time=15.606 ms
+84 bytes from 192.168.1.5 icmp_seq=2 ttl=64 time=7.619 ms
+84 bytes from 192.168.1.5 icmp_seq=3 ttl=64 time=7.841 ms
+84 bytes from 192.168.1.5 icmp_seq=4 ttl=64 time=6.489 ms
+84 bytes from 192.168.1.5 icmp_seq=5 ttl=64 time=9.715 ms
+
+PC3> ping 192.168.1.6
+
+84 bytes from 192.168.1.6 icmp_seq=1 ttl=64 time=21.061 ms
+84 bytes from 192.168.1.6 icmp_seq=2 ttl=64 time=9.140 ms
+84 bytes from 192.168.1.6 icmp_seq=3 ttl=64 time=4.044 ms
+84 bytes from 192.168.1.6 icmp_seq=4 ttl=64 time=5.324 ms
+84 bytes from 192.168.1.6 icmp_seq=5 ttl=64 time=6.706 ms
+
+PC3>
+
+
+
+ping 192.168.1.5
+
+84 bytes from 192.168.1.5 icmp_seq=1 ttl=64 time=7.894 ms
+84 bytes from 192.168.1.5 icmp_seq=2 ttl=64 time=12.585 ms
+84 bytes from 192.168.1.5 icmp_seq=3 ttl=64 time=5.006 ms
+84 bytes from 192.168.1.5 icmp_seq=4 ttl=64 time=8.354 ms
+84 bytes from 192.168.1.5 icmp_seq=5 ttl=64 time=12.321 ms
+
+PC4> ping 192.168.1.6
+
+84 bytes from 192.168.1.6 icmp_seq=1 ttl=64 time=14.428 ms
+84 bytes from 192.168.1.6 icmp_seq=2 ttl=64 time=4.895 ms
+84 bytes from 192.168.1.6 icmp_seq=3 ttl=64 time=3.512 ms
+84 bytes from 192.168.1.6 icmp_seq=4 ttl=64 time=10.309 ms
+84 bytes from 192.168.1.6 icmp_seq=5 ttl=64 time=4.707 ms
+
+PC4>
+
+
+
+PC5> ping 192.168.1.6
+
+84 bytes from 192.168.1.6 icmp_seq=1 ttl=64 time=1.081 ms
+84 bytes from 192.168.1.6 icmp_seq=2 ttl=64 time=6.963 ms
+84 bytes from 192.168.1.6 icmp_seq=3 ttl=64 time=7.296 ms
+84 bytes from 192.168.1.6 icmp_seq=4 ttl=64 time=1.908 ms
+84 bytes from 192.168.1.6 icmp_seq=5 ttl=64 time=7.645 ms
+
+PC5>
+
+
+
+SW1 → SW2
+Spanning Tree Protocol
+    Protocol Identifier: Spanning Tree Protocol (0x0000)
+    Protocol Version Identifier: Spanning Tree (0)
+    BPDU Type: Configuration (0x00)
+    BPDU flags: 0x00
+    Root Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Root Path Cost: 0
+    Bridge Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Port identifier: 0x8001
+    Message Age: 0
+    Max Age: 20
+    Hello Time: 2
+    Forward Delay: 15
+
+
+SW1 → SW3
+Spanning Tree Protocol
+    Protocol Identifier: Spanning Tree Protocol (0x0000)
+    Protocol Version Identifier: Spanning Tree (0)
+    BPDU Type: Configuration (0x00)
+    BPDU flags: 0x00
+    Root Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Root Path Cost: 0
+    Bridge Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Port identifier: 0x8004
+    Message Age: 0
+    Max Age: 20
+    Hello Time: 2
+    Forward Delay: 15
+
+
+SW1 → SW4
+Spanning Tree Protocol
+    Protocol Identifier: Spanning Tree Protocol (0x0000)
+    Protocol Version Identifier: Spanning Tree (0)
+    BPDU Type: Configuration (0x00)
+    BPDU flags: 0x00
+    Root Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Root Path Cost: 0
+    Bridge Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Port identifier: 0x8005
+    Message Age: 0
+    Max Age: 20
+    Hello Time: 2
+    Forward Delay: 15
+
+
+SW1 → SW5
+Spanning Tree Protocol
+    Protocol Identifier: Spanning Tree Protocol (0x0000)
+    Protocol Version Identifier: Spanning Tree (0)
+    BPDU Type: Configuration (0x00)
+    BPDU flags: 0x00
+    Root Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Root Path Cost: 0
+    Bridge Identifier: 4096 / 1 / 0c:f9:28:9b:00:00
+    Port identifier: 0x8007
+    Message Age: 0
+    Max Age: 20
+    Hello Time: 2
+    Forward Delay: 15
+
+
+Layer2Switch-3#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Layer2Switch-3(config)#interface GigabitEthernet0/1
+Layer2Switch-3(config-if)#spanning-tree cost 1000
+Layer2Switch-3(config-if)#exit
+Layer2Switch-3(config)#exit
+*Aug 13 16:31:33.814: %SYS-5-CONFIG_I: Configured from console by console
+Building configuration...
+Compressed configuration from 5071 bytes to 1939 bytes[OK]
+Layer2Switch-3#
+*Aug 13 16:31:50.288: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Aug 13 16:31:51.094: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Layer2Switch-3#
+
+
+

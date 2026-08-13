@@ -1,0 +1,25 @@
+Building configuration...
+
+Current configuration : 5071 bytes
+!
+! Last configuration change at 16:39:22 UTC Thu Aug 13 2026
+!
+version 15.0
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Layer2Switch-3
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+ --More--
