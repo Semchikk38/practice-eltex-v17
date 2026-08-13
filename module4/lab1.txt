@@ -1,0 +1,229 @@
+PC1> ip 192.168.1.1/24
+Checking for duplicate address...
+PC1 : 192.168.1.1 255.255.255.0
+
+PC2> ip 192.168.1.2/24
+Checking for duplicate address...
+PC2 : 192.168.1.2 255.255.255.0
+
+
+ping 192.168.1.2
+
+84 bytes from 192.168.1.2 icmp_seq=1 ttl=64 time=0.291 ms
+84 bytes from 192.168.1.2 icmp_seq=2 ttl=64 time=0.343 ms
+84 bytes from 192.168.1.2 icmp_seq=3 ttl=64 time=0.313 ms
+84 bytes from 192.168.1.2 icmp_seq=4 ttl=64 time=0.261 ms
+84 bytes from 192.168.1.2 icmp_seq=5 ttl=64 time=0.267 ms
+
+PC1>
+
+
+ARP-запрос:
+Ethernet II, Src: Private_66:68:00 (00:50:79:66:68:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+    Source: Private_66:68:00 (00:50:79:66:68:00)
+    Type: ARP (0x0806)
+    [Stream index: 0]
+    Padding: 000000000000000000000000000000000000
+    Frame check sequence: 0x00000000 [unverified]
+    [FCS Status: Unverified]
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: Private_66:68:00 (00:50:79:66:68:00)
+    Sender IP address: 192.168.1.1
+    Target MAC address: 00:00:00:00:00:00
+    Target IP address: 192.168.1.2
+
+
+ARP-ответ:
+Ethernet II, Src: Private_66:68:01 (00:50:79:66:68:01), Dst: Private_66:68:00 (00:50:79:66:68:00)
+    Destination: Private_66:68:00 (00:50:79:66:68:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Private_66:68:01 (00:50:79:66:68:01)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 2]
+    Padding: 000000000000000000000000000000000000
+    Frame check sequence: 0x00000000 [unverified]
+    [FCS Status: Unverified]
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: Private_66:68:01 (00:50:79:66:68:01)
+    Sender IP address: 192.168.1.2
+    Target MAC address: Private_66:68:00 (00:50:79:66:68:00)
+    Target IP address: 192.168.1.1
+Захват производился на всех линках топологии: линк №1 (ПК1–коммутатор) и линк №2 (коммутатор–ПК2). Структура ARP-пакетов на обоих линках идентична!
+
+
+R1#enable
+R1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet0/0
+R1(config-if)# ip address 192.168.1.1 255.255.255.0
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)#interface FastEthernet0/1
+                     ^
+% Invalid input detected at '^' marker.
+
+R1(config)# ip address 192.168.2.1 255.255.255.0
+                      ^
+% Invalid input detected at '^' marker.
+
+R1(config)# no shutdown
+% Incomplete command.
+
+R1(config)# end
+R1#
+*Mar  1 00:02:40.087: %SYS-5-CONFIG_I: Configured from console by console
+R1#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.1.1     YES manual up                    up  
+FastEthernet1/0            unassigned      YES unset  administratively down down
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  unassigned      YES unset  administratively down down
+Serial3/3                  unassigned      YES unset  administratively down down
+R1#
+R1#enable
+R1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet1/0
+R1(config-if)# ip address 192.168.2.1 255.255.255.0
+R1(config-if)# no shutdown
+R1(config-if)# end
+*Mar  1 00:03:32.387: %LINK-3-UPDOWN: Interface FastEthernet1/0, changed state to up
+*Mar  1 00:03:33.387: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to up
+R1(config-if)# end
+R1#
+*Mar  1 00:03:36.031: %SYS-5-CONFIG_I: Configured from console by console
+R1#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.1.1     YES manual up                    up  
+FastEthernet1/0            192.168.2.1     YES manual up                    up  
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  unassigned      YES unset  administratively down down
+Serial3/3                  unassigned      YES unset  administratively down down
+R1#
+R1#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.1.1     YES manual up                    up  
+FastEthernet1/0            192.168.2.1     YES manual up                    up  
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  unassigned      YES unset  administratively down down
+Serial3/3                  unassigned      YES unset  administratively down down
+R1#
+
+PC1> ping 192.168.2.2
+
+192.168.2.2 icmp_seq=1 timeout
+84 bytes from 192.168.2.2 icmp_seq=2 ttl=63 time=11.751 ms
+84 bytes from 192.168.2.2 icmp_seq=3 ttl=63 time=15.793 ms
+84 bytes from 192.168.2.2 icmp_seq=4 ttl=63 time=15.581 ms
+84 bytes from 192.168.2.2 icmp_seq=5 ttl=63 time=16.013 ms
+
+PC1>
+
+ARP-запрос:
+Ethernet II, Src: Private_66:68:00 (00:50:79:66:68:00), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+    Source: Private_66:68:00 (00:50:79:66:68:00)
+    Type: ARP (0x0806)
+    [Stream index: 2]
+    Padding: 000000000000000000000000000000000000
+    Frame check sequence: 0x00000000 [unverified]
+    [FCS Status: Unverified]
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: Private_66:68:00 (00:50:79:66:68:00)
+    Sender IP address: 192.168.1.2
+    Target MAC address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Target IP address: 192.168.1.1
+
+ARP-ответ:
+Ethernet II, Src: cc:01:37:d6:00:00 (cc:01:37:d6:00:00), Dst: Private_66:68:00 (00:50:79:66:68:00)
+    Destination: Private_66:68:00 (00:50:79:66:68:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: cc:01:37:d6:00:00 (cc:01:37:d6:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    [Stream index: 3]
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: cc:01:37:d6:00:00 (cc:01:37:d6:00:00)
+    Sender IP address: 192.168.1.1
+    Target MAC address: Private_66:68:00 (00:50:79:66:68:00)
+    Target IP address: 192.168.1.2
+
+ICMP Echo Request:
+Ethernet II, Src: Private_66:68:00 (00:50:79:66:68:00), Dst: cc:01:37:d6:00:00 (cc:01:37:d6:00:00)
+       Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.2, Dst: 192.168.2.2
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0xdd01 (56577)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0x1953 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.2
+    Destination Address: 192.168.2.2
+    [Stream index: 0]
+Internet Control Message Protocol
+    Type: Echo (ping) request (8)
+    Code: 0
+    Checksum: 0x1e2e [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 477 (0x01dd)
+    Identifier (LE): 56577 (0xdd01)
+    Sequence Number (BE): 1 (0x0001)
+    Sequence Number (LE): 256 (0x0100)
+ 
+ICMP Echo Reply:
+Ethernet II, Src: cc:01:37:d6:00:00 (cc:01:37:d6:00:00), Dst: Private_66:68:00 (00:50:79:66:68:00)
+Internet Protocol Version 4, Src: 192.168.2.2, Dst: 192.168.1.2
+    Time to Live: 63
+Internet Control Message Protocol
+    Type: Echo (ping) reply (0)
+    Code: 0
+
+Захват трафика производился на всех линках топологии в соответствии с требованием nb!. На линке №1 ARP-обмен происходит между ПК1 и роутером. ПК1 запрашивает MAC-адрес шлюза (192.168.1.1) и получает ответ. На линке №2 роутер запрашивает MAC-адрес ПК2 (192.168.2.2) и также получает ответ. MAC-адреса на разных линках отличаются. Структура запросов и ответов на линке 2 имеет аналогичную структуру.
