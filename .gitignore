@@ -1,0 +1,41 @@
+# Объектные файлы
+*.o
+*.obj
+
+# Статические библиотеки
+*.a
+*.lib
+
+# Динамические библиотеки
+*.so
+*.dll
+*.dylib
+
+# Исполняемые файлы
+*.exe
+*.out
+
+# Временные файлы
+*.swp
+*.tmp
+*~
+*.log
+
+# Файлы отладки
+*.pdb
+*.ilk
+*.exp
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Файлы сборки
+*.dSYM/
+*.su
+*.idb
+*.dep

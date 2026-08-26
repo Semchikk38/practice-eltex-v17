@@ -1,0 +1,63 @@
+enable
+configure terminal
+hostname Layer2Switch-3
+!
+vlan 20
+ name VLAN20
+vlan 333
+ name VLAN333
+vlan 999
+ name RESERVED
+exit
+!
+! --- Рабочий магистральный канал к LS1 ---
+interface GigabitEthernet0/0
+ description TRUNK-to-LS1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+!
+! --- Изолированные избыточные каналы (только VLAN 999) ---
+interface GigabitEthernet0/1
+ description ISOLATED-LINK-to-LS1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 999
+ no shutdown
+exit
+interface GigabitEthernet0/2
+ description ISOLATED-LINK-to-LS2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 999
+ no shutdown
+exit
+interface GigabitEthernet0/3
+ description ISOLATED-LINK-to-LS2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 999
+ no shutdown
+exit
+!
+! --- Порты доступа к ПК ---
+interface GigabitEthernet1/0
+ description PC1-VLAN20
+ switchport mode access
+ switchport access vlan 20
+ no shutdown
+exit
+interface GigabitEthernet1/1
+ description PC2-VLAN333
+ switchport mode access
+ switchport access vlan 333
+ no shutdown
+exit
+end
+write memory

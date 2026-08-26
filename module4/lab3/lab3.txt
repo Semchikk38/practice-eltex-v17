@@ -1,0 +1,504 @@
+1
+
+Layer2Switch-1>enable
+Layer2Switch-1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Layer2Switch-1(config)#vlan 20
+Layer2Switch-1(config-vlan)#vlan 333
+Layer2Switch-1(config-vlan)#exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface range g0/0-1
+Layer2Switch-1(config-if-range)#channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Layer2Switch-1(config-if-range)#exit
+Layer2Switch-1(config)#interface port-channel 1
+Layer2Switch-1(config-if)#switchport mode trunk
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+Layer2Switch-1(config-if)#switchport trunk native vlan 333
+Layer2Switch-1(config-if)#exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface range g0/2-3
+Layer2Switch-1(config-if-range)#channel-group 2 mode active
+Creating a port-channel interface Port-channel 2
+
+Layer2Switch-1(config-if-range)#exit
+Layer2Switch-1(config)#interface port-channel 2
+Layer2Switch-1(config-if)#switchport mode trunk
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+Layer2Switch-1(config-if)#switchport trunk native vlan 333
+Layer2Switch-1(config-if)#exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface range g1/0-1
+Layer2Switch-1(config-if-range)#channel-group 3 mode active
+Creating a port-channel interface Port-channel 3
+
+Layer2Switch-1(config-if-range)#exit
+Layer2Switch-1(config)#interface port-channel 3
+Layer2Switch-1(config-if)#switchport mode trunk
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+Layer2Switch-1(config-if)#switchport trunk native vlan 333
+Layer2Switch-1(config-if)#exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface range g1/2-3
+Layer2Switch-1(config-if-range)#channel-group 4 mode active
+Creating a port-channel interface Port-channel 4
+
+Layer2Switch-1(config-if-range)#exit
+Layer2Switch-1(config)#interface port-channel 4
+Layer2Switch-1(config-if)#switchport mode trunk
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+Layer2Switch-1(config-if)#switchport trunk native vlan 333
+Layer2Switch-1(config-if)#exit
+
+ayer2Switch-1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface port-channel 1
+Layer2Switch-1(config-if)# switchport trunk encapsulation dot1q
+Layer2Switch-1(config-if)# switchport mode trunk
+Layer2Switch-1(config-if)# switchport trunk native vlan 333
+Layer2Switch-1(config-if)# exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface port-channel 2
+Layer2Switch-1(config-if)# switchport trunk encapsulation dot1q
+Layer2Switch-1(config-if)# switchport mode trunk
+Layer2Switch-1(config-if)# switchport trunk native vlan 333
+Layer2Switch-1(config-if)# exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface port-channel 3
+Layer2Switch-1(config-if)# switchport trunk encapsulation dot1q
+Layer2Switch-1(config-if)# switchport mode trunk
+Layer2Switch-1(config-if)# switchport trunk native vlan 333
+Layer2Switch-1(config-if)# exit
+Layer2Switch-1(config)#
+Layer2Switch-1(config)#interface port-channel 4
+Layer2Switch-1(config-if)# switchport trunk encapsulation dot1q
+Layer2Switch-1(config-if)# switchport mode trunk
+Layer2Switch-1(config-if)# switchport trunk native vlan 333
+Layer2Switch-1(config-if)# exit
+Layer2Switch-1(config)#
+
+
+
+2
+Switch>enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#interface range g0/0-1
+Switch(config-if-range)#channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Switch(config-if-range)#exit
+Switch(config)#interface port-channel 1
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk native vlan 333
+Switch(config-if)#exit
+Switch(config)#interface range g0/2-3
+Switch(config-if-range)#channel-group 2 mode active
+Creating a port-channel interface Port-channel 2
+
+Switch(config-if-range)#exit
+Switch(config)#interface port-channel 2
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk native vlan 333
+Switch(config-if)#exit
+Switch(config)#interface range g1/0-1
+Switch(config-if-range)#channel-group 3 mode active
+Creating a port-channel interface Port-channel 3
+
+Switch(config-if-range)#exit
+Switch(config)#interface port-channel 3
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk native vlan 333
+Switch(config-if)#exit
+Switch(config)#interface range g1/2-3
+Switch(config-if-range)#channel-group 4 mode active
+Creating a port-channel interface Port-channel 4
+
+Switch(config-if-range)#exit
+Switch(config)#interface port-channel 4
+Switch(config-if)#switchport trunk encapsulation dot1q
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk native vlan 333
+Switch(config-if)#exit
+Switch(config)#
+
+
+
+
+
+3
+enable
+configure terminal
+
+vlan 20
+vlan 333
+exit
+
+interface range g0/0-1
+ channel-group 1 mode active
+ exit
+interface port-channel 1
+ switchport mode trunk
+ switchport trunk native vlan 333
+ exit
+
+interface range g0/2-3
+ channel-group 2 mode active
+ exit
+interface port-channel 2
+ switchport mode trunk
+ switchport trunk native vlan 333
+ exit
+
+default interface g1/0
+interface g1/0
+ switchport mode access
+ switchport access vlan 20
+ exit
+
+interface g1/1
+ switchport mode access
+ switchport access vlan 333
+ exit
+
+Switch>enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#interface port-channel 1
+Switch(config-if)# switchport trunk encapsulation dot1q
+Command rejected: Po1 is not a switching port.
+Switch(config-if)# switchport mode trunk
+Command rejected: Po1 is not a switching port.
+Switch(config-if)# switchport trunk native vlan 333
+Command rejected: Po1 is not a switching port.
+Switch(config-if)# exit
+Switch(config)#
+Switch(config)#interface port-channel 2
+Switch(config-if)# switchport trunk encapsulation dot1q
+Command rejected: Po2 is not a switching port.
+Switch(config-if)# switchport mode trunk
+Command rejected: Po2 is not a switching port.
+Switch(config-if)# switchport trunk native vlan 333
+Command rejected: Po2 is not a switching port.
+Switch(config-if)# exit
+Switch(config)#
+Switch#enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#no interface port-channel 1
+Switch(config)#no interface port-channel 2
+Switch(config)#
+Switch(config)#interface range g0/0-1
+Switch(config-if-range)# channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Switch(config-if-range)# exit
+Switch(config)#interface port-channel 1
+Switch(config-if)# switchport trunk encapsulation dot1q
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk native vlan 333
+Switch(config-if)# exit
+Switch(config)#
+Switch(config)#interface range g0/2-3
+Switch(config-if-range)# channel-group 2 mode active
+Creating a port-channel interface Port-channel 2
+
+Switch(config-if-range)# exit
+Switch(config)#interface port-channel 2
+Switch(config-if)# switchport trunk encapsulation dot1q
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk native vlan 333
+Switch(config-if)# exit
+
+Switch#show etherchannel summary
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+
+Number of channel-groups in use: 2
+Number of aggregators:           2
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)         LACP      Gi0/0(P)    Gi0/1(P)
+2      Po2(SU)         LACP      Gi0/2(P)    Gi0/3(P)
+
+
+
+
+
+4
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#default interface g1/0
+Interface GigabitEthernet1/0 set to default configuration
+Switch(config)#default interface g1/1
+Interface GigabitEthernet1/1 set to default configuration
+Switch(config)#
+Switch(config)#interface g1/0
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 20
+Switch(config-if)# exit
+Switch(config)#
+Switch(config)#interface g1/1
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 333
+Switch(config-if)# exit
+Switch(config)#
+
+
+Switch#enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#interface range g0/0-1
+Switch(config-if-range)# channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Switch(config-if-range)# exit
+Switch(config)#interface port-channel 1
+Switch(config-if)# switchport trunk encapsulation dot1q
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk native vlan 333
+Switch(config-if)# exit
+Switch(config)#
+Switch(config)#interface range g0/2-3
+Switch(config-if-range)# channel-group 2 mode active
+Creating a port-channel interface Port-channel 2
+
+Switch(config-if-range)# exit
+Switch(config)#interface port-channel 2
+Switch(config-if)# switchport trunk encapsulation dot1q
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport trunk native vlan 333
+Switch(config-if)# exit
+
+
+
+5
+Switch#enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#hostname Layer2Switch-5
+Layer2Switch-5(config)#
+Layer2Switch-5(config)#vlan 20
+Layer2Switch-5(config-vlan)#vlan 333
+Layer2Switch-5(config-vlan)#exit
+Layer2Switch-5(config)#
+Layer2Switch-5(config)#default interface g1/0
+Interface GigabitEthernet1/0 set to default configuration
+Layer2Switch-5(config)#default interface g1/1
+Interface GigabitEthernet1/1 set to default configuration
+Layer2Switch-5(config)#
+Layer2Switch-5(config)#interface g1/0
+Layer2Switch-5(config-if)# switchport mode access
+Layer2Switch-5(config-if)# switchport access vlan 20
+Layer2Switch-5(config-if)# exit
+Layer2Switch-5(config)#
+Layer2Switch-5(config)#interface g1/1
+Layer2Switch-5(config-if)# switchport mode access
+Layer2Switch-5(config-if)# switchport access vlan 333
+Layer2Switch-5(config-if)# exit
+Layer2Switch-5(config)#
+
+
+Layer2Switch-5>enable
+Layer2Switch-5#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Layer2Switch-5(config)#interface range g0/0-1
+Layer2Switch-5(config-if-range)#channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Layer2Switch-5(config-if-range)#exit
+Layer2Switch-5(config)#interface port-channel 1
+Layer2Switch-5(config-if)#switchport trunk encapsulation dot1q
+Layer2Switch-5(config-if)#switchport mode trunk
+Layer2Switch-5(config-if)#switchport trunk native vlan 333
+Layer2Switch-5(config-if)#exit
+Layer2Switch-5(config)#
+Layer2Switch-5(config)#interface range g0/2-3
+Layer2Switch-5(config-if-range)#channel-group 2 mode active
+Creating a port-channel interface Port-channel 2
+
+Layer2Switch-5(config-if-range)#exit
+Layer2Switch-5(config)#interface port-channel 2
+Layer2Switch-5(config-if)#switchport trunk encapsulation dot1q
+Layer2Switch-5(config-if)#switchport mode trunk
+Layer2Switch-5(config-if)#switchport trunk native vlan 333
+Layer2Switch-5(config-if)#exit
+Layer2Switch-5(config)#
+
+
+
+
+
+ping 192.168.20.3
+
+84 bytes from 192.168.20.3 icmp_seq=1 ttl=64 time=15.326 ms
+84 bytes from 192.168.20.3 icmp_seq=2 ttl=64 time=4.866 ms
+84 bytes from 192.168.20.3 icmp_seq=3 ttl=64 time=11.776 ms
+84 bytes from 192.168.20.3 icmp_seq=4 ttl=64 time=12.157 ms
+84 bytes from 192.168.20.3 icmp_seq=5 ttl=64 time=8.337 ms
+
+PC1>
+PC1> ping 192.168.20.5
+
+84 bytes from 192.168.20.5 icmp_seq=1 ttl=64 time=9.502 ms
+84 bytes from 192.168.20.5 icmp_seq=2 ttl=64 time=5.597 ms
+84 bytes from 192.168.20.5 icmp_seq=3 ttl=64 time=8.269 ms
+84 bytes from 192.168.20.5 icmp_seq=4 ttl=64 time=11.700 ms
+84 bytes from 192.168.20.5 icmp_seq=5 ttl=64 time=23.659 ms
+
+PC1>
+
+ping 192.168.33.2
+
+No gateway found **разные VLAN**
+
+PC1>
+
+
+
+ping 192.168.33.4
+
+84 bytes from 192.168.33.4 icmp_seq=1 ttl=64 time=21.761 ms
+84 bytes from 192.168.33.4 icmp_seq=2 ttl=64 time=14.691 ms
+84 bytes from 192.168.33.4 icmp_seq=3 ttl=64 time=5.729 ms
+84 bytes from 192.168.33.4 icmp_seq=4 ttl=64 time=7.450 ms
+84 bytes from 192.168.33.4 icmp_seq=5 ttl=64 time=11.802 ms
+
+PC2> ping 192.168.33.6
+
+84 bytes from 192.168.33.6 icmp_seq=1 ttl=64 time=16.505 ms
+84 bytes from 192.168.33.6 icmp_seq=2 ttl=64 time=12.147 ms
+84 bytes from 192.168.33.6 icmp_seq=3 ttl=64 time=21.698 ms
+84 bytes from 192.168.33.6 icmp_seq=4 ttl=64 time=17.158 ms
+84 bytes from 192.168.33.6 icmp_seq=5 ttl=64 time=12.400 ms
+
+PC2>
+
+
+ping 192.168.20.5
+
+84 bytes from 192.168.20.5 icmp_seq=1 ttl=64 time=7.263 ms
+84 bytes from 192.168.20.5 icmp_seq=2 ttl=64 time=11.499 ms
+84 bytes from 192.168.20.5 icmp_seq=3 ttl=64 time=20.998 ms
+84 bytes from 192.168.20.5 icmp_seq=4 ttl=64 time=24.797 ms
+84 bytes from 192.168.20.5 icmp_seq=5 ttl=64 time=9.145 ms
+
+PC3> ping 192.168.33.6
+
+No gateway found
+
+PC3>
+
+
+
+PC4> ping 192.168.33.6
+
+84 bytes from 192.168.33.6 icmp_seq=1 ttl=64 time=13.538 ms
+84 bytes from 192.168.33.6 icmp_seq=2 ttl=64 time=11.475 ms
+84 bytes from 192.168.33.6 icmp_seq=3 ttl=64 time=21.406 ms
+84 bytes from 192.168.33.6 icmp_seq=4 ttl=64 time=18.008 ms
+84 bytes from 192.168.33.6 icmp_seq=5 ttl=64 time=14.707 ms
+
+PC4>
+
+
+
+
+ping 192.168.33.2
+
+No gateway found
+
+PC5>
+
+
+
+Frame 21: Packet, 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface -, id 0
+Ethernet II, Src: Private_66:68:00 (00:50:79:66:68:00), Dst: Private_66:68:02 (00:50:79:66:68:02)
+    Destination: Private_66:68:02 (00:50:79:66:68:02)
+    Source: Private_66:68:00 (00:50:79:66:68:00)
+    Type: 802.1Q Virtual LAN (0x8100)
+    [Stream index: 5]
+802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 20
+Internet Protocol Version 4, Src: 192.168.20.1, Dst: 192.168.20.3
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2579 (9593)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0xabdb [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.20.1
+    Destination Address: 192.168.20.3
+    [Stream index: 0]
+Internet Control Message Protocol
+    Type: Echo (ping) request (8)
+    Code: 0
+    Checksum: 0xa6e5 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 31013 (0x7925)
+    Identifier (LE): 9593 (0x2579)
+    Sequence Number (BE): 1 (0x0001)
+    Sequence Number (LE): 256 (0x0100)
+    [Response frame: 22]
+    Data (56 bytes)
+
+
+
+Frame 58: Packet, 98 bytes on wire (784 bits), 98 bytes captured (784 bits) on interface -, id 0
+Ethernet II, Src: Private_66:68:01 (00:50:79:66:68:01), Dst: Private_66:68:03 (00:50:79:66:68:03)
+    Destination: Private_66:68:03 (00:50:79:66:68:03)
+    Source: Private_66:68:01 (00:50:79:66:68:01)
+    Type: IPv4 (0x0800)
+    [Stream index: 7]
+Internet Protocol Version 4, Src: 192.168.33.2, Dst: 192.168.33.4
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 84
+    Identification: 0x2586 (9606)
+    000. .... = Flags: 0x0
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: ICMP (1)
+    Header Checksum: 0x91cc [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.33.2
+    Destination Address: 192.168.33.4
+    [Stream index: 1]
+Internet Control Message Protocol
+    Type: Echo (ping) request (8)
+    Code: 0
+    Checksum: 0x99e5 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 34341 (0x8625)
+    Identifier (LE): 9606 (0x2586)
+    Sequence Number (BE): 1 (0x0001)
+    Sequence Number (LE): 256 (0x0100)
+    [Response frame: 59]
+    Data (56 bytes)
+
+

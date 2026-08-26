@@ -1,0 +1,73 @@
+enable
+configure terminal
+hostname Layer2Switch-1
+!
+vlan 20
+ name VLAN20
+vlan 333
+ name VLAN333
+vlan 999
+ name RESERVED
+exit
+!
+! --- Рабочие магистральные каналы (Native VLAN 333, тегированные 20,333) ---
+interface GigabitEthernet0/0
+ description TRUNK-to-LS2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+interface GigabitEthernet0/2
+ description TRUNK-to-LS3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+interface GigabitEthernet1/0
+ description TRUNK-to-LS4
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+interface GigabitEthernet1/1
+ description TRUNK-to-LS4
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+interface GigabitEthernet1/2
+ description TRUNK-to-LS5
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+interface GigabitEthernet1/3
+ description TRUNK-to-LS5
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 333
+ switchport trunk allowed vlan 20,333
+ no shutdown
+exit
+!
+! --- Изолированный избыточный канал (только VLAN 999, без петель в рабочих VLAN) ---
+interface GigabitEthernet0/3
+ description ISOLATED-LINK-to-LS3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 999
+ no shutdown
+exit
+end
+write memory
